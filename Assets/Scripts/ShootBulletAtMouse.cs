@@ -33,7 +33,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 cooldown = 0;
                 fired = true;
                 GameObject mybullet = GameObject.Instantiate(bullet, transform.position + Vector3.up, transform.rotation) as GameObject;
-                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 10, ForceMode.Impulse);
+                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
             }
