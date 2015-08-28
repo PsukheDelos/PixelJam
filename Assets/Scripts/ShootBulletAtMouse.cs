@@ -4,9 +4,11 @@ using System.Collections;
 public class ShootBulletAtMouse : MonoBehaviour {
     public GameObject target;
     public GameObject bullet;
+    public float bulletLife;
     public GameObject knifeArea;
     public WeaponType type;
     private bool fired;
+    private bool switched;
     private float cooldown;
 
     public enum WeaponType
@@ -31,9 +33,9 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 cooldown = 0;
                 fired = true;
                 GameObject mybullet = GameObject.Instantiate(bullet, transform.position + Vector3.up, transform.rotation) as GameObject;
-                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 1, ForceMode.Impulse);
+                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 10, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
-                GameObject.Destroy(mybullet, 1f);
+                GameObject.Destroy(mybullet, bulletLife);
             }
             if (type == WeaponType.KNIFE && !fired)
             {
@@ -46,6 +48,26 @@ public class ShootBulletAtMouse : MonoBehaviour {
         if (Input.GetAxis("Fire1") < 0.01)
         {
             fired = false;
+        }
+        if (Input.GetAxis("Fire3") > 0.01)
+        {
+            if (!switched)
+            {
+                switched = true;
+                switch (type)
+                {
+                    case WeaponType.KNIFE:
+                        type = WeaponType.PISTOL; break;
+                    case WeaponType.PISTOL:
+                        type = WeaponType.TOMMYGUN; break;
+                    case WeaponType.TOMMYGUN:
+                        type = WeaponType.KNIFE; break;
+                }
+            }
+        }
+        if (Input.GetAxis("Fire3") < 0.01)
+        {
+            switched = false;
         }
 	}
 }
