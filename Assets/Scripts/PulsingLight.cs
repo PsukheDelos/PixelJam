@@ -4,6 +4,7 @@ using System.Collections;
 public class PulsingLight : MonoBehaviour {
 
 	private Light myLight;
+	public float delay = 1f;
 	public float maxIntensity = 1f;
 	public float minIntensity = 0f;
 	public float pulseSpeed = 1f; //here, a value of 0.5f would take 2 seconds and a value of 2f would take half a second
