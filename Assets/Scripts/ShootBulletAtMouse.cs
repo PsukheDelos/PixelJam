@@ -4,9 +4,14 @@ using System.Collections;
 public class ShootBulletAtMouse : MonoBehaviour {
     public GameObject target;
     public GameObject tommybullet;
+    public GameObject tommypoint;
+    public float tommyshake;
     public GameObject pistolbullet;
-    public float bulletLife;
+    public GameObject pistolpoint;
+    public float pistolshake;
     public GameObject knifeArea;
+    public float knifeshake;
+    public float bulletLife;
     public WeaponType type;
     private bool fired;
     private bool switched;
@@ -33,7 +38,8 @@ public class ShootBulletAtMouse : MonoBehaviour {
             {
                 cooldown = 0;
                 fired = true;
-                GameObject mybullet = GameObject.Instantiate(tommybullet, transform.position + Vector3.up, transform.rotation) as GameObject;
+                CamShake.addShake(tommyshake);
+                GameObject mybullet = GameObject.Instantiate(tommybullet, tommypoint.transform.position, transform.rotation) as GameObject;
                 mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
@@ -41,14 +47,16 @@ public class ShootBulletAtMouse : MonoBehaviour {
             if (type == WeaponType.PISTOL && !fired)
             {
                 fired = true;
-                GameObject mybullet = GameObject.Instantiate(pistolbullet, transform.position + Vector3.up, transform.rotation) as GameObject;
-                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
+                CamShake.addShake(pistolshake);
+                GameObject mybullet = GameObject.Instantiate(pistolbullet, pistolpoint.transform.position, transform.rotation) as GameObject;
+                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 40, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
             }
             if (type == WeaponType.KNIFE && !fired)
             {
                 fired = true;
+                CamShake.addShake(knifeshake);
                 GameObject myknife = GameObject.Instantiate(knifeArea, transform.position + Vector3.up + transform.forward, transform.rotation) as GameObject;
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), myknife.GetComponentInChildren<Collider>());
                 GameObject.Destroy(myknife, 0.2f);
