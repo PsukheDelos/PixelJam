@@ -6,7 +6,7 @@ public class CameraControls : MonoBehaviour {
     public GameObject target;
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         transform.Translate((target.transform.position - transform.position) * Time.deltaTime * cameraStickiness);
 	}
 }

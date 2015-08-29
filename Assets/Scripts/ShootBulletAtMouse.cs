@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class ShootBulletAtMouse : MonoBehaviour {
+
+    public Animator anim;
     public GameObject target;
     public GameObject tommybullet;
     public GameObject tommypoint;
@@ -13,6 +15,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
     public float knifeshake;
     public float bulletLife;
     public WeaponType type;
+
     private bool fired;
     private bool switched;
     private float cooldown;
@@ -37,6 +40,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
         {
             if (type == WeaponType.TOMMYGUN && cooldown > 0.1f)
             {
+                anim.SetTrigger("TommyTrigger");
                 cooldown = 0;
                 fired = true;
                 CamShake.addShake(tommyshake);
@@ -48,6 +52,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
             }
             if (type == WeaponType.PISTOL && !fired)
             {
+                anim.SetTrigger("PistolTrigger");
                 fired = true;
                 CamShake.addShake(pistolshake);
                 GameObject mybullet = GameObject.Instantiate(pistolbullet, pistolpoint.transform.position, transform.rotation) as GameObject;
@@ -58,6 +63,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
             }
             if (type == WeaponType.KNIFE && !fired)
             {
+                anim.SetTrigger("KnifeTrigger");
                 fired = true;
                 CamShake.addShake(knifeshake);
                 GameObject myknife = GameObject.Instantiate(knifeArea, transform.position + Vector3.up + transform.forward, transform.rotation) as GameObject;
@@ -70,7 +76,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
         {
             fired = false;
         }
-        if (Input.GetAxis("Fire3") > 0.01)
+        if (Input.GetAxis("Fire2") > 0.01)
         {
             if (!switched)
             {
@@ -78,15 +84,18 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 switch (type)
                 {
                     case WeaponType.KNIFE:
+                        anim.SetTrigger("KnifeAway");
                         type = WeaponType.PISTOL; break;
                     case WeaponType.PISTOL:
+                        anim.SetTrigger("PistolAway");
                         type = WeaponType.TOMMYGUN; break;
                     case WeaponType.TOMMYGUN:
+                        anim.SetTrigger("TommyAway");
                         type = WeaponType.KNIFE; break;
                 }
             }
         }
-        if (Input.GetAxis("Fire3") < 0.01)
+        if (Input.GetAxis("Fire2") < 0.01)
         {
             switched = false;
         }

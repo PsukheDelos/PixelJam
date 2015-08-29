@@ -75,7 +75,10 @@ ModelImporter:
     4300006: pCube4
     4300008: pCube5
     4300010: pCube6
-    7400000: Take 001
+    7400000: Cutscene
+    7400002: Run
+    7400004: Strafe
+    7400006: Idle
     9500000: //RootNode
     13700000: pCube1
     13700002: pCube2
@@ -102,7 +105,367 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cutscene
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/legs
+        weight: 1
+      - path: body/legs/pCube1
+        weight: 1
+      - path: body/legs/pCube2
+        weight: 1
+      - path: body/legs/pCube3
+        weight: 1
+      - path: body/legs/pCube4
+        weight: 1
+      - path: body/legs/pCube5
+        weight: 1
+      - path: body/legs/pCube6
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/bot_bones1
+        weight: 1
+      - path: rig/bot_bones1/ikHandle3
+        weight: 1
+      - path: rig/bot_bones1/ikHandle4
+        weight: 1
+      - path: rig/bot_bones1/ikHandle6
+        weight: 1
+      - path: rig/bot_bones1/ikHandle7
+        weight: 1
+      - path: rig/bot_bones1/joint36
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/bot_controls1
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle4
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle5
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle6
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle7
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle8
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle9
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle17
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/legs
+        weight: 1
+      - path: body/legs/pCube1
+        weight: 1
+      - path: body/legs/pCube2
+        weight: 1
+      - path: body/legs/pCube3
+        weight: 1
+      - path: body/legs/pCube4
+        weight: 1
+      - path: body/legs/pCube5
+        weight: 1
+      - path: body/legs/pCube6
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/bot_bones1
+        weight: 1
+      - path: rig/bot_bones1/ikHandle3
+        weight: 1
+      - path: rig/bot_bones1/ikHandle4
+        weight: 1
+      - path: rig/bot_bones1/ikHandle6
+        weight: 1
+      - path: rig/bot_bones1/ikHandle7
+        weight: 1
+      - path: rig/bot_bones1/joint36
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/bot_controls1
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle4
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle5
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle6
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle7
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle8
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle9
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle17
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Strafe
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/legs
+        weight: 1
+      - path: body/legs/pCube1
+        weight: 1
+      - path: body/legs/pCube2
+        weight: 1
+      - path: body/legs/pCube3
+        weight: 1
+      - path: body/legs/pCube4
+        weight: 1
+      - path: body/legs/pCube5
+        weight: 1
+      - path: body/legs/pCube6
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/bot_bones1
+        weight: 1
+      - path: rig/bot_bones1/ikHandle3
+        weight: 1
+      - path: rig/bot_bones1/ikHandle4
+        weight: 1
+      - path: rig/bot_bones1/ikHandle6
+        weight: 1
+      - path: rig/bot_bones1/ikHandle7
+        weight: 1
+      - path: rig/bot_bones1/joint36
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/bot_controls1
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle4
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle5
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle6
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle7
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle8
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle9
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle17
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/legs
+        weight: 1
+      - path: body/legs/pCube1
+        weight: 1
+      - path: body/legs/pCube2
+        weight: 1
+      - path: body/legs/pCube3
+        weight: 1
+      - path: body/legs/pCube4
+        weight: 1
+      - path: body/legs/pCube5
+        weight: 1
+      - path: body/legs/pCube6
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/bot_bones1
+        weight: 1
+      - path: rig/bot_bones1/ikHandle3
+        weight: 1
+      - path: rig/bot_bones1/ikHandle4
+        weight: 1
+      - path: rig/bot_bones1/ikHandle6
+        weight: 1
+      - path: rig/bot_bones1/ikHandle7
+        weight: 1
+      - path: rig/bot_bones1/joint36
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/bot_bones1/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/bot_controls1
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle4
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle5
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle6
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle7
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle8
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle9
+        weight: 1
+      - path: rig/bot_controls1/nurbsCircle17
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
