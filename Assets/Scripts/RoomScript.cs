@@ -12,9 +12,9 @@ public class RoomScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		for (var i = 0; i < nodes.Length; i++) {
-			Debug.DrawLine(transform.position, nodes[i].position);
-		}
+//		for (var i = 0; i < nodes.Length; i++) {
+//			Debug.DrawLine(transform.position, nodes[i].position);
+//		}
 	}
 
 	public Transform getRandomNode(){
