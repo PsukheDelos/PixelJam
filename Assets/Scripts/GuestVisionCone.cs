@@ -16,6 +16,8 @@ public class GuestVisionCone : MonoBehaviour {
             lines[i].AddComponent<LineRenderer>();
             lines[i].GetComponent<LineRenderer>().SetVertexCount(2);
             lines[i].GetComponent<LineRenderer>().SetWidth(0.1f, 0.1f);
+            lines[i].GetComponent<LineRenderer>().material = new Material(Shader.Find("Particles/Additive"));
+            lines[i].GetComponent<LineRenderer>().SetColors(Color.white, Color.clear);
         }
     }
 

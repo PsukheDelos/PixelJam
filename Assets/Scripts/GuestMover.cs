@@ -26,7 +26,7 @@ public class GuestMover : MonoBehaviour
             started = true;
             nma.SetDestination(transform.position);
         }
-        if ((nma.isActiveAndEnabled && Vector3.Magnitude(nma.velocity) < 0.001) ||
+        if ((nma.isActiveAndEnabled && Vector3.Magnitude(nma.velocity) < 0.1) ||
             (Vector3.Magnitude(transform.position - nma.destination) < wanderThreshold
             && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
         {
