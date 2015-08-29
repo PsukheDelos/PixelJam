@@ -3,7 +3,8 @@ using System.Collections;
 
 public class ShootBulletAtMouse : MonoBehaviour {
     public GameObject target;
-    public GameObject bullet;
+    public GameObject tommybullet;
+    public GameObject pistolbullet;
     public float bulletLife;
     public GameObject knifeArea;
     public WeaponType type;
@@ -28,11 +29,19 @@ public class ShootBulletAtMouse : MonoBehaviour {
         cooldown += Time.deltaTime;
         if (Input.GetAxis("Fire1") > 0.01)
         {
-            if ((type == WeaponType.TOMMYGUN && cooldown > 0.1f) || (type == WeaponType.PISTOL && !fired))
+            if (type == WeaponType.TOMMYGUN && cooldown > 0.1f)
             {
                 cooldown = 0;
                 fired = true;
-                GameObject mybullet = GameObject.Instantiate(bullet, transform.position + Vector3.up, transform.rotation) as GameObject;
+                GameObject mybullet = GameObject.Instantiate(tommybullet, transform.position + Vector3.up, transform.rotation) as GameObject;
+                mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
+                Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
+                GameObject.Destroy(mybullet, bulletLife);
+            }
+            if (type == WeaponType.PISTOL && !fired)
+            {
+                fired = true;
+                GameObject mybullet = GameObject.Instantiate(pistolbullet, transform.position + Vector3.up, transform.rotation) as GameObject;
                 mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
