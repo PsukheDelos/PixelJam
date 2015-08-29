@@ -13,6 +13,7 @@ public class GuestMover : MonoBehaviour
     private bool pathing;
     private GameObject targetNode;
     private float waitTime;
+	private float stuckTime;
 
     // Use this for initialization
     void Start()
@@ -20,29 +21,42 @@ public class GuestMover : MonoBehaviour
 		nma = GetComponent<NavMeshAgent> ();
         targetNode = room.GetComponent<RoomScript>().getNearestNode(transform);
 		nma.destination = targetNode.transform.position;
+		waitTime = targetNode.GetComponent<NodeScript>().getDuration();
     }
 
     // Update is called once per frame
     void Update()
     {
-        waitTime -= Time.deltaTime;
-        if (waitTime < 0)
+		//If the character has stopped, and is not waiting, it might be stuck
+		//So we'll wait a few seconds then wander
+		if (Vector3.Magnitude(nma.velocity) < 0.1f && waitTime > 0) {
+			stuckTime += Time.deltaTime;
+			if(stuckTime > 5.0f){
+				targetNode = room.GetComponent<RoomScript>().getRandomNode();
+				waitTime = targetNode.GetComponent<NodeScript>().getDuration();
+				stuckTime = 0f;
+			}
+		}
+
+        if ((Vector3.Magnitude(transform.position - nma.destination) < targetThreshold
+            && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
         {
-            if ((Vector3.Magnitude(transform.position - nma.destination) < targetThreshold
-                && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
-            {
-                if (GetComponent<GuestState>().getState() == GuestState.State.WANDER)
-                {
-                    targetNode = targetNode.GetComponent<NodeScript>().getNextNode();
-                }
-                if (GetComponent<GuestState>().getState() == GuestState.State.PANIC)
-                {
-                    targetNode = room.GetComponent<RoomScript>().getWorld().GetComponent<WorldScript>().getNewRoom(room).GetComponent<RoomScript>().getRandomNode();
-                }
-                nma.SetDestination(targetNode.transform.position);
-            }
-            Debug.DrawLine(transform.position, nma.destination, Color.green);
+			waitTime -=Time.deltaTime;
+			if(waitTime < 0){
+	            if (GetComponent<GuestState>().getState() == GuestState.State.WANDER)
+	            {
+	                targetNode = targetNode.GetComponent<NodeScript>().getNextNode();
+	            }
+	            if (GetComponent<GuestState>().getState() == GuestState.State.PANIC)
+	            {
+	                targetNode = room.GetComponent<RoomScript>().getWorld().GetComponent<WorldScript>().getNewRoom(room).GetComponent<RoomScript>().getRandomNode();
+	            }
+	            nma.SetDestination(targetNode.transform.position);
+				waitTime = targetNode.GetComponent<NodeScript>().getDuration();
+			}
         }
+        Debug.DrawLine(transform.position, nma.destination, Color.green);
+       
     }
 
     public void panic(GameObject source)
