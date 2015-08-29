@@ -16,8 +16,7 @@ public class GuestVisionCone : MonoBehaviour {
             lines[i].AddComponent<LineRenderer>();
             lines[i].GetComponent<LineRenderer>().SetVertexCount(2);
             lines[i].GetComponent<LineRenderer>().SetWidth(0.1f, 0.1f);
-            lines[i].GetComponent<LineRenderer>().material = new Material(Shader.Find("Particles/Additive"));
-            lines[i].GetComponent<LineRenderer>().SetColors(Color.white, Color.clear);
+            lines[i].GetComponent<LineRenderer>().material = new Material(Shader.Find("UI/Unlit/Transparent"));
         }
     }
 
@@ -26,6 +25,9 @@ public class GuestVisionCone : MonoBehaviour {
 	void Update () {
         float myoffset;
         RaycastHit ray;
+        Color startColor = GetComponent<GuestState>().getStateColor();
+        Color endColor = GetComponent<GuestState>().getStateColor();
+        endColor.a = 0;
         for (int i = 0; i < lines.Length; i++)
         {
             myoffset = (offset * -0.5f) + ((i * offset) / (count-1));
@@ -38,6 +40,7 @@ public class GuestVisionCone : MonoBehaviour {
             {
                 lines[i].GetComponent<LineRenderer>().SetPosition(1, transform.position + ((Quaternion.AngleAxis(myoffset, Vector3.up)) * transform.forward) * length);
             }
+            lines[i].GetComponent<LineRenderer>().SetColors(endColor, startColor);
         }
 	}
 
