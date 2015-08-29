@@ -9,23 +9,17 @@ public class GuestMover : MonoBehaviour
 
     private Vector3 direction;
     private NavMeshAgent nma;
-    private bool started;
+    private bool pathing;
 
     // Use this for initialization
     void Start()
     {
-        nma = GetComponent<NavMeshAgent>();
-        started = false;
+        nma.SetDestination(transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!started && nma.isActiveAndEnabled)
-        {
-            started = true;
-            nma.SetDestination(transform.position);
-        }
         if ((nma.isActiveAndEnabled && Vector3.Magnitude(nma.velocity) < 0.1) ||
             (Vector3.Magnitude(transform.position - nma.destination) < wanderThreshold
             && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
