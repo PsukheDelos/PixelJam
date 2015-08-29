@@ -9,6 +9,11 @@ public class GuestVision : MonoBehaviour {
         RaycastHit hit;
         if (Vector3.Magnitude(player.transform.position - transform.position) < GetComponent<GuestVisionCone>().length)
         {
+
+            if (player.GetComponent<ObservedBehaviour>().seeFiredShot())
+            {
+                GetComponent<GuestState>().setState(GuestState.State.PANIC);
+            }
             if (Vector3.Dot(transform.forward, Vector3.Normalize(player.transform.position - transform.position))
                 * Mathf.Rad2Deg > GetComponent<GuestVisionCone>().offset)
             {
@@ -16,11 +21,7 @@ public class GuestVision : MonoBehaviour {
                 {
                     if (hit.collider.tag == "Player")
                     {
-                        Debug.DrawRay(transform.position, Vector3.up * 100, Color.white);
-                        if (player.GetComponent<ObservedBehaviour>().seeFiredShot())
-                        {
-                            GetComponent<GuestState>().setState(GuestState.State.PANIC);
-                        }
+                        GetComponent<GuestKnowledge>().setKnowledge(1);
                     }
                     else
                     {

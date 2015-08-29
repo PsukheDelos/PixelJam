@@ -4,8 +4,8 @@ using System.Collections;
 public class GuestState : MonoBehaviour
 {
     public State state;
-
-    private Rect screenrect;
+    public float panicDuration;
+    private float panicCooldown;
 
     public enum State
     {
@@ -24,6 +24,18 @@ public class GuestState : MonoBehaviour
                 GetComponent<NavMeshAgent>().speed = 2; break;
             case State.GOSSIP:
                 GetComponent<NavMeshAgent>().speed = 0.2f; break;
+        }
+    }
+
+    void Update()
+    {
+        if (state == State.PANIC)
+        {
+            panicCooldown -= Time.deltaTime;
+            if (panicCooldown < 0)
+            {
+                setState(State.WANDER);
+            }
         }
     }
 
@@ -52,7 +64,8 @@ public class GuestState : MonoBehaviour
         switch (newState)
         {
             case State.PANIC:
-                GetComponent<NavMeshAgent>().speed = 10; break;
+                GetComponent<NavMeshAgent>().speed = 10;
+                panicCooldown = panicDuration; break;
             case State.WANDER:
                 GetComponent<NavMeshAgent>().speed = 2; break;
             case State.GOSSIP:

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GuestKnowledge : MonoBehaviour {
-    private float knowledge;
+    public float knowledge;
 
     public float getKnowledge()
     {
@@ -12,5 +12,10 @@ public class GuestKnowledge : MonoBehaviour {
     public void addKnowledge(float amount)
     {
         knowledge += amount;
+    }
+
+    public void setKnowledge(float amount)
+    {
+        knowledge = amount;
     }
 }
