@@ -17,7 +17,9 @@ public class GuestMover : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		nma = GetComponent<NavMeshAgent> ();
         targetNode = room.GetComponent<RoomScript>().getNearestNode(transform);
+		nma.destination = targetNode.transform.position;
     }
 
     // Update is called once per frame
@@ -26,8 +28,7 @@ public class GuestMover : MonoBehaviour
         waitTime -= Time.deltaTime;
         if (waitTime < 0)
         {
-            if ((Vector3.Magnitude(nma.velocity) < 0.1) ||
-                (Vector3.Magnitude(transform.position - nma.destination) < targetThreshold
+            if ((Vector3.Magnitude(transform.position - nma.destination) < targetThreshold
                 && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
             {
                 if (GetComponent<GuestState>().getState() == GuestState.State.WANDER)

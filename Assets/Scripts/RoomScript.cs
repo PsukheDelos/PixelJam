@@ -21,10 +21,10 @@ public class RoomScript : MonoBehaviour {
 	}
 
 	public GameObject getNearestNode (Transform pos) {
-		var closestDistance = (nodes[0].transform.position - pos.position).sqrMagnitude;
-		var nearestNodeIndex = 0;
-		for (var i = 1; i < nodes.Length; i++) {
-			var thisDistance = (nodes[i].transform.position - pos.position).sqrMagnitude;
+		float closestDistance = float.MaxValue;
+		int nearestNodeIndex = 0;
+		for (int i = 0; i < nodes.Length; i++) {
+			var thisDistance = Vector3.Magnitude(nodes[i].transform.position - pos.position);
 			if (thisDistance < closestDistance) {
 				closestDistance = thisDistance;
 				nearestNodeIndex = i;
