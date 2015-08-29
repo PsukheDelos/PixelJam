@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: MainDude_halfed.ma
-//Last modified: Sat, Aug 29, 2015 12:51:00 PM
+//Last modified: Sat, Aug 29, 2015 01:17:52 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -12,12 +12,12 @@ fileInfo "osv" "Microsoft Windows 8 Business Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -62.402074726133634 40.461687266979411 6.9977420554528891 ;
-	setAttr ".r" -type "double3" -15.938352729611635 -814.59999999993011 0 ;
+	setAttr ".t" -type "double3" -80.814562383464391 44.862338681610225 29.555979085142106 ;
+	setAttr ".r" -type "double3" -12.338352729612064 -794.19999999991808 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 59.593738065474703;
+	setAttr ".coi" 87.730799485635998;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1992,7 +1992,7 @@ createNode joint -n "joint2" -p "joint1";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 1;
 	setAttr ".t" -type "double3" 5.7570413575936481 -0.012755490902927718 0 ;
-	setAttr ".r" -type "double3" 87.976744411947521 11.764244135238407 -89.750468534307444 ;
+	setAttr ".r" -type "double3" 86.316082107470692 12.602969164948908 -90.46183081062631 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 -3.9069807187817602 ;
@@ -2005,7 +2005,7 @@ createNode joint -n "joint3" -p "joint2";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 2;
 	setAttr ".t" -type "double3" 8.993958063831446 0.0010169600195577783 -4.4408920985006262e-016 ;
-	setAttr ".r" -type "double3" 4.960487320575715e-027 -3.4256030086629461e-013 31.762719482665265 ;
+	setAttr ".r" -type "double3" 5.0348951977286843e-027 -3.4769874455883588e-013 32.239163907693261 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 0.26879414091637693 ;
@@ -2186,7 +2186,7 @@ createNode joint -n "joint17" -p "joint1";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 1;
 	setAttr ".t" -type "double3" -5.2587542639941551 0.67410660228980779 8.7016388700601028e-031 ;
-	setAttr ".r" -type "double3" 82.832168365653601 -7.296727087796163 -82.133971240182333 ;
+	setAttr ".r" -type "double3" 82.428190746049694 -16.706596794688224 -82.644828562159788 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 180 0 176.2199924753549 ;
@@ -2199,7 +2199,7 @@ createNode joint -n "joint18" -p "joint17";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 2;
 	setAttr ".t" -type "double3" 9.0365076965458897 -0.0011942047860922737 -4.440892098500638e-016 ;
-	setAttr ".r" -type "double3" -1.3101453956768059e-016 -4.3563008107988416e-013 -98.132010864708363 ;
+	setAttr ".r" -type "double3" -1.4207722732579598e-016 -4.7241408674010853e-013 -106.41814306693961 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -4.1697717511639145e-019 7.6494714679304106e-017 -0.62463912072365346 ;
@@ -2383,7 +2383,7 @@ createNode joint -n "joint32" -p "joint1";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 1;
 	setAttr ".t" -type "double3" 0.2128333097946104 1.841030000111163 -0.077519436285723886 ;
-	setAttr ".r" -type "double3" 92.88236851873333 36.080399023853438 0.16578621526529067 ;
+	setAttr ".r" -type "double3" 94.403047449535364 34.672192948538502 1.3360407557779761 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 180 0 86.660226242130193 ;
@@ -2454,7 +2454,7 @@ createNode parentConstraint -n "joint1_parentConstraint1" -p "joint1";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.14942922263831859 -11.39545736148073 0.18307366673521663 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 -176.36181342213536 ;
-	setAttr ".lr" -type "double3" 5.3645726040439623 -0.3405978244461122 359.98404330012175 ;
+	setAttr ".lr" -type "double3" 5.548523917306639 -1.6908785950866903 359.98391701189013 ;
 	setAttr ".rst" -type "double3" -0.46181118611757194 31.986991093993634 1.5879522658303844 ;
 	setAttr ".rsrr" -type "double3" 0 0 360 ;
 	setAttr -k on ".w0";
@@ -2479,7 +2479,7 @@ createNode orientConstraint -n "nurbsCircle1_orientConstraint1" -p "nurbsCircle1
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 87.997718886854472 -14.873160266265772 -88.90855505087994 ;
+	setAttr ".lr" -type "double3" 87.574514887742396 -14.421840571967127 -88.998388512046688 ;
 	setAttr ".o" -type "double3" 0.0041929770310680445 1.7002521608599994 90.000062217859778 ;
 	setAttr ".rsrr" -type "double3" 2.4885969156619233e-016 3.2264281333491632e-017 
 		89.999999999999986 ;
@@ -2520,7 +2520,7 @@ createNode orientConstraint -n "nurbsCircle2_orientConstraint1" -p "nurbsCircle2
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 27.049439158230477 -98.699003436478179 -213.71539552865133 ;
+	setAttr ".lr" -type "double3" 40.905289539157017 -98.487913995306187 -225.77298315735879 ;
 	setAttr ".o" -type "double3" 359.9910919251322 3.3336708868269573 -89.82330075755911 ;
 	setAttr ".rsrr" -type "double3" 359.99999999999994 -2.1194112019394667e-016 89.999999999999929 ;
 	setAttr -k on ".w0";
@@ -2560,14 +2560,15 @@ createNode orientConstraint -n "nurbsCircle3_orientConstraint1" -p "nurbsCircle3
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 29.005186984454891 46.521111927847791 23.84729109131548 ;
+	setAttr ".lr" -type "double3" 28.055950892555892 46.763259002557838 23.039558288366827 ;
 	setAttr ".o" -type "double3" 15.803692278440291 50.81572772650771 177.02453168104054 ;
 	setAttr ".rsrr" -type "double3" -5.5173828725626996e-033 1.987846675914698e-016 
 		180 ;
 	setAttr -k on ".w0";
 createNode transform -n "nurbsCircle4";
-	setAttr ".t" -type "double3" 2.2513539934419144 -1.6499640182153668 1.4641994840712187 ;
-	setAttr ".s" -type "double3" 0.22477966924240528 0.22477966924240528 0.22477966924240528 ;
+	addAttr -ci true -k true -sn "blendOrient1" -ln "blendOrient1" -dv 1 -smn 0 -smx 
+		1 -at "double";
+	setAttr -k on ".blendOrient1";
 createNode nurbsCurve -n "nurbsCircleShape4" -p "nurbsCircle4";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -2600,14 +2601,15 @@ createNode orientConstraint -n "nurbsCircle4_orientConstraint1" -p "nurbsCircle4
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -90.329419124593599 0.027614776429452054 -90.133404530115257 ;
+	setAttr ".lr" -type "double3" -98.077751897549305 5.3189263586562916 -88.497328397450033 ;
 	setAttr ".o" -type "double3" -22.022457688746801 90.355346550591989 247.92193274479396 ;
 	setAttr ".rsrr" -type "double3" 3.5304156964245031e-013 -1.9083328088781069e-014 
 		180 ;
 	setAttr -k on ".w0";
 createNode transform -n "nurbsCircle5";
-	setAttr ".t" -type "double3" -3.0681564165642383 -1.5783649304200909 1.4641994840712194 ;
-	setAttr ".s" -type "double3" 0.22477966924240528 0.22477966924240528 0.22477966924240528 ;
+	addAttr -ci true -k true -sn "blendOrient1" -ln "blendOrient1" -dv 1 -smn 0 -smx 
+		1 -at "double";
+	setAttr -k on ".blendOrient1";
 createNode nurbsCurve -n "nurbsCircleShape5" -p "nurbsCircle5";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -2640,15 +2642,12 @@ createNode orientConstraint -n "nurbsCircle5_orientConstraint1" -p "nurbsCircle5
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -89.242891099471692 3.4376670235642496e-005 -89.867107217013427 ;
+	setAttr ".lr" -type "double3" -85.724860747666483 5.171020897330167 -90.724924436129513 ;
 	setAttr ".o" -type "double3" -9.9549106641402112 89.231317210822567 260.04417692053744 ;
 	setAttr ".rsrr" -type "double3" 5.0888874903416268e-013 -1.9083328088781044e-014 
 		180 ;
 	setAttr -k on ".w0";
 createNode transform -n "nurbsCircle6";
-	setAttr ".t" -type "double3" -2.9609598216433755 -4.0335228762266988 5.6183646244530836 ;
-	setAttr ".r" -type "double3" 0 0 180 ;
-	setAttr ".s" -type "double3" 0.22477966924240528 0.22477966924240528 0.22477966924240528 ;
 createNode nurbsCurve -n "nurbsCircleShape6" -p "nurbsCircle6";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -2668,9 +2667,6 @@ createNode nurbsCurve -n "nurbsCircleShape6" -p "nurbsCircle6";
 		-9.433630016086509 5.7764324017703692e-016 -9.433630016086509
 		;
 createNode transform -n "nurbsCircle7";
-	setAttr ".t" -type "double3" 2.1299077924737047 -4.1803616343441572 5.3674117525303711 ;
-	setAttr ".r" -type "double3" 0 0 180 ;
-	setAttr ".s" -type "double3" 0.22477966924240528 0.22477966924240528 0.22477966924240528 ;
 createNode nurbsCurve -n "nurbsCircleShape7" -p "nurbsCircle7";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -2690,9 +2686,6 @@ createNode nurbsCurve -n "nurbsCircleShape7" -p "nurbsCircle7";
 		-9.433630016086509 5.7764324017703692e-016 -9.433630016086509
 		;
 createNode transform -n "nurbsCircle8";
-	setAttr ".t" -type "double3" -3.0681564165642383 8.5186356647594845 9.7553737719100404 ;
-	setAttr ".r" -type "double3" 90 5.8869450282519929e-017 180 ;
-	setAttr ".s" -type "double3" 0.11319738528554026 0.11319738528554026 0.11319738528554026 ;
 createNode nurbsCurve -n "nurbsCircleShape8" -p "nurbsCircle8";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -2712,9 +2705,6 @@ createNode nurbsCurve -n "nurbsCircleShape8" -p "nurbsCircle8";
 		-9.433630016086509 5.7764324017703692e-016 -9.433630016086509
 		;
 createNode transform -n "nurbsCircle9";
-	setAttr ".t" -type "double3" 2.2513539934419144 8.5186356647594845 9.7553737719100404 ;
-	setAttr ".r" -type "double3" 90 5.8869450282519929e-017 180 ;
-	setAttr ".s" -type "double3" 0.11319738528554026 0.11319738528554026 0.11319738528554026 ;
 createNode nurbsCurve -n "nurbsCircleShape9" -p "nurbsCircle9";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -2770,7 +2760,7 @@ createNode parentConstraint -n "nurbsCircle10_parentConstraint1" -p "nurbsCircle
 	setAttr ".tg[0].tot" -type "double3" 1.4210854715202004e-014 -0.010345321960585352 
 		-12.05621599441352 ;
 	setAttr ".tg[0].tor" -type "double3" 90 -3.1805546814635168e-015 -6.3611093629270304e-015 ;
-	setAttr ".lr" -type "double3" 88.940574999008703 28.569210386304228 89.494539740178922 ;
+	setAttr ".lr" -type "double3" 89.999999999999986 28.605960099869431 89.999999999987295 ;
 	setAttr ".rst" -type "double3" 5.0965905622209027 32.230437402491638 -2.5952432593803709 ;
 	setAttr ".rsrr" -type "double3" 89.999999999999986 0 89.999999999999986 ;
 	setAttr -k on ".w0";
@@ -2913,7 +2903,7 @@ createNode parentConstraint -n "nurbsCircle14_parentConstraint1" -p "nurbsCircle
 		-12.056215994421237 ;
 	setAttr ".tg[0].tor" -type "double3" 89.999999999986699 6.3611093629255536e-015 
 		-6.3611093629285134e-015 ;
-	setAttr ".lr" -type "double3" 95.086011153845249 23.939694551019013 90.327980249017187 ;
+	setAttr ".lr" -type "double3" 92.959143396876328 23.949945622178159 89.465129116564214 ;
 	setAttr ".rst" -type "double3" -6.0317304023610463 28.170994659040044 1.4641994840712171 ;
 	setAttr ".rsrr" -type "double3" 0 90 0 ;
 	setAttr -k on ".w0";
@@ -3185,7 +3175,7 @@ createNode joint -n "joint37" -p "joint36";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 4;
 	setAttr ".t" -type "double3" 3.2302628611794328 -0.13776535097284506 -3.233628144716106e-008 ;
-	setAttr ".r" -type "double3" 90.757108900528294 -3.0805441666365414e-005 -0.5411449763672509 ;
+	setAttr ".r" -type "double3" 94.271809774116321 -4.6525481303011746 -2.1321244692888714 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 180 3.5311250384401269e-031 -56.909752082538965 ;
@@ -3198,7 +3188,7 @@ createNode joint -n "joint38" -p "joint37";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 5;
 	setAttr ".t" -type "double3" 9.9671279537505644 -3.5527136788005009e-015 1.0226506119758298e-015 ;
-	setAttr ".r" -type "double3" -1.1284530022893183e-016 3.58282957199276e-016 -1.1420640694500088 ;
+	setAttr ".r" -type "double3" 8.604903647501249e-016 -2.7327672451313526e-015 8.7086934563987413 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 180 -5.6612931042643734e-015 -1.1421292572530746 ;
@@ -3211,7 +3201,7 @@ createNode joint -n "joint39" -p "joint38";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 6;
 	setAttr ".t" -type "double3" 8.9700937850044635 -2.55351295663786e-014 -8.8631886189886085e-016 ;
-	setAttr ".r" -type "double3" -90.000000266227332 -1.8209371851497782e-007 -3.7428915896133721e-010 ;
+	setAttr ".r" -type "double3" -93.499207616472916 1.2407716965879632 4.2301447360112849 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 180 5.9306745454498335e-015 -0.86052306860965222 ;
@@ -3242,7 +3232,7 @@ createNode joint -n "joint41" -p "joint36";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 4;
 	setAttr ".t" -type "double3" -1.1033542072827462 -3.0173285918864248 -3.233628179980585e-008 ;
-	setAttr ".r" -type "double3" 89.670580883258751 0.024618558248993502 0.049092867256813194 ;
+	setAttr ".r" -type "double3" 81.929470966901263 4.7404185277580115 -3.0118205356802541 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -3.1084311486541478e-015 5.8274841298205789e-015 -56.151703837850825 ;
@@ -3255,7 +3245,7 @@ createNode joint -n "joint42" -p "joint41";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 5;
 	setAttr ".t" -type "double3" 9.9957620576545629 0 -1.0166568157632691e-015 ;
-	setAttr ".r" -type "double3" -5.3054137694781777e-018 3.5717837686104448e-018 -0.05222673441765667 ;
+	setAttr ".r" -type "double3" 1.0214372488156963e-015 -6.877434064315935e-016 10.055074728591105 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 5.3057943306614559e-018 5.8203489256226205e-015 0.10446093242446876 ;
@@ -3268,7 +3258,7 @@ createNode joint -n "joint43" -p "joint42";
 	setAttr ".uoc" yes;
 	setAttr ".oc" 6;
 	setAttr ".t" -type "double3" 8.9112165375583992 2.7267077484793845e-013 -9.0523926966376542e-016 ;
-	setAttr ".r" -type "double3" -90.000000183122935 2.7509721517693642 -2.0688085073703517 ;
+	setAttr ".r" -type "double3" -82.184605736419854 4.8159850335656538 -5.7038208125764633 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 1.4550881757975316e-016 5.6093420005020257e-015 2.9718893469176733 ;
@@ -3326,7 +3316,7 @@ createNode parentConstraint -n "gun_parentConstraint1" -p "gun";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 2.930659849848972 -2.5871467101932204 -0.61158353778950447 ;
 	setAttr ".tg[0].tor" -type "double3" 74.317591910919205 94.022953898334123 14.038488031006024 ;
-	setAttr ".lr" -type "double3" 179.85670872714337 179.58451158757913 -180.26063984854014 ;
+	setAttr ".lr" -type "double3" 180.41453148098009 180.72742680237411 -179.18002346706675 ;
 	setAttr ".rst" -type "double3" -5.5569860114997756 24.170011958532907 11.85376997514301 ;
 	setAttr ".rsrr" -type "double3" 179.99999999999989 180 -179.99999999999991 ;
 	setAttr -k on ".w0";
@@ -3415,7 +3405,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 49 -ast 1 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 50 -max 59 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode skinCluster -n "skinCluster1";
 	setAttr -s 8 ".wl";
@@ -9838,18 +9828,18 @@ createNode animCurveTL -n "nurbsCircle12_translateZ";
 createNode animCurveTL -n "nurbsCircle13_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -6.0640402437951835 26 -6.0640402437951835
-		 50 -6.0640402437951835;
+	setAttr -s 5 ".ktv[0:4]"  1 -6.0640402437951835 26 -6.0640402437951835
+		 50 -6.0640402437951835 55 -6.0640402437951835 60 -6.0640402437951835;
 createNode animCurveTL -n "nurbsCircle13_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 32.230437402494246 26 32.230437402494246
-		 50 32.230437402494246;
+	setAttr -s 5 ".ktv[0:4]"  1 32.230437402494246 26 32.230437402494246
+		 50 32.230437402494246 55 32.230437402494246 60 32.230437402494246;
 createNode animCurveTL -n "nurbsCircle13_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1.4641994840712242 26 1.4641994840712242
-		 50 1.4641994840712242;
+	setAttr -s 5 ".ktv[0:4]"  1 1.4641994840712242 26 1.4641994840712242
+		 50 1.4641994840712242 55 1.4641994840712242 60 1.4641994840712242;
 createNode animCurveTL -n "nurbsCircle15_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
@@ -9868,53 +9858,71 @@ createNode animCurveTL -n "nurbsCircle15_translateZ";
 createNode animCurveTL -n "nurbsCircle16_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -0.36080112657500091 26 -0.36080112657500091
-		 50 -0.36080112657500091;
+	setAttr -s 5 ".ktv[0:4]"  1 -0.36080112657500091 26 -0.36080112657500091
+		 50 -0.36080112657500091 55 -0.36080112657500091 60 -0.36080112657500091;
 createNode animCurveTL -n "nurbsCircle16_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 24.283974198937926 26 24.283974198937926
-		 50 24.283974198937926;
+	setAttr -s 5 ".ktv[0:4]"  1 24.283974198937926 26 24.283974198937926
+		 50 24.283974198937926 55 24.283974198937926 60 24.283974198937926;
 createNode animCurveTL -n "nurbsCircle16_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1.4641994840712214 26 1.4641994840712214
-		 50 1.4641994840712214;
+	setAttr -s 5 ".ktv[0:4]"  1 1.4641994840712214 26 1.4641994840712214
+		 50 1.4641994840712214 55 1.4641994840712214 60 1.4641994840712214;
 createNode animCurveTL -n "nurbsCircle2_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -6.0503306669044363 26 -6.0503306669044363
-		 50 -6.0503306669044363;
+	setAttr -s 5 ".ktv[0:4]"  1 -6.0503306669044363 26 -6.0503306669044363
+		 50 -6.0503306669044363 55 -6.0503306669044363 60 -6.0503306669044363;
 createNode animCurveTL -n "nurbsCircle2_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 22.817584802221308 26 23.004433071265584
-		 50 22.817584802221308;
+	setAttr -s 5 ".ktv[0:4]"  1 22.817584802221308 26 23.004433071265584
+		 50 22.817584802221308 51 23.628983222072552 60 22.817584802221308;
+	setAttr -s 5 ".kit[3:4]"  1 18;
+	setAttr -s 5 ".kot[2:4]"  1 1 18;
+	setAttr -s 5 ".ktl[2:4]" no no yes;
+	setAttr -s 5 ".kix[3:4]"  0.020262554287910461 1;
+	setAttr -s 5 ".kiy[3:4]"  0.99979472160339355 0;
+	setAttr -s 5 ".kox[2:4]"  0.7741626501083374 0.27103254199028015 
+		1;
+	setAttr -s 5 ".koy[2:4]"  0.63298672437667847 -0.9625701904296875 
+		0;
 createNode animCurveTL -n "nurbsCircle2_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 8.0201361335767825 26 8.0201361335767825
-		 50 8.0201361335767825;
+	setAttr -s 5 ".ktv[0:4]"  1 8.0201361335767825 26 8.0201361335767825
+		 50 8.0201361335767825 51 5.2462981186379576 60 8.0201361335767825;
+	setAttr -s 5 ".kit[3:4]"  1 18;
+	setAttr -s 5 ".kot[2:4]"  1 1 18;
+	setAttr -s 5 ".ktl[2:4]" no no yes;
+	setAttr -s 5 ".kix[3:4]"  0.13292112946510315 1;
+	setAttr -s 5 ".kiy[3:4]"  0.9911266565322876 0;
+	setAttr -s 5 ".kox[2:4]"  0.3177294135093689 0.69925916194915771 
+		1;
+	setAttr -s 5 ".koy[2:4]"  -0.94818145036697388 0.71486830711364746 
+		0;
 createNode animCurveTL -n "nurbsCircle3_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -0.36080112657500091 26 -0.36080112657500091
-		 50 -0.36080112657500091;
+	setAttr -s 5 ".ktv[0:4]"  1 -0.36080112657500091 26 -0.36080112657500091
+		 50 -0.36080112657500091 55 -0.36080112657500091 60 -0.36080112657500091;
 createNode animCurveTL -n "nurbsCircle3_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 40.327121094693425 26 40.327121094693425
-		 50 40.327121094693425;
+	setAttr -s 5 ".ktv[0:4]"  1 40.327121094693425 26 40.327121094693425
+		 50 40.327121094693425 55 40.327121094693425 60 40.327121094693425;
 createNode animCurveTL -n "nurbsCircle3_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 2.6686134792878153 26 2.1499565925429458
-		 50 2.6686134792878153;
+	setAttr -s 5 ".ktv[0:4]"  1 2.6686134792878153 26 2.1499565925429458
+		 50 2.6686134792878153 55 2.5100581066812637 60 2.6686134792878153;
 createNode animCurveTU -n "nurbsCircle2_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 26 1 50 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 1 26 1 50 1 55 1 60 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode pairBlend -n "pairBlend1";
 	setAttr ".txm" 2;
 	setAttr ".tym" 2;
@@ -9922,33 +9930,33 @@ createNode pairBlend -n "pairBlend1";
 createNode animCurveTA -n "pairBlend1_inRotateX1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 457.01573384605609 26 457.01573384605609
-		 50 457.01573384605609;
+	setAttr -s 5 ".ktv[0:4]"  1 457.01573384605609 26 457.01573384605609
+		 50 457.01573384605609 55 457.01573384605609 60 457.01573384605609;
 createNode animCurveTA -n "pairBlend1_inRotateY1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -4.7616178826045674 26 -4.7616178826045674
-		 50 -4.7616178826045674;
+	setAttr -s 5 ".ktv[0:4]"  1 -4.7616178826045674 26 -4.7616178826045674
+		 50 -4.7616178826045674 55 -4.7616178826045674 60 -4.7616178826045674;
 createNode animCurveTA -n "pairBlend1_inRotateZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -273.29460391892707 26 -273.29460391892707
-		 50 -273.29460391892707;
+	setAttr -s 5 ".ktv[0:4]"  1 -273.29460391892707 26 -273.29460391892707
+		 50 -273.29460391892707 55 -273.29460391892707 60 -273.29460391892707;
 createNode animCurveTU -n "nurbsCircle2_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.1722048825848525 26 0.1722048825848525
-		 50 0.1722048825848525;
+	setAttr -s 5 ".ktv[0:4]"  1 0.1722048825848525 26 0.1722048825848525
+		 50 0.1722048825848525 55 0.1722048825848525 60 0.1722048825848525;
 createNode animCurveTU -n "nurbsCircle2_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.1722048825848525 26 0.1722048825848525
-		 50 0.1722048825848525;
+	setAttr -s 5 ".ktv[0:4]"  1 0.1722048825848525 26 0.1722048825848525
+		 50 0.1722048825848525 55 0.1722048825848525 60 0.1722048825848525;
 createNode animCurveTU -n "nurbsCircle2_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.1722048825848525 26 0.1722048825848525
-		 50 0.1722048825848525;
+	setAttr -s 5 ".ktv[0:4]"  1 0.1722048825848525 26 0.1722048825848525
+		 50 0.1722048825848525 55 0.1722048825848525 60 0.1722048825848525;
 createNode animCurveTU -n "nurbsCircle1_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
@@ -9991,37 +9999,37 @@ createNode animCurveTU -n "nurbsCircle1_scaleZ";
 createNode animCurveTU -n "nurbsCircle16_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 26 1 50 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 1 26 1 50 1 55 1 60 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTA -n "nurbsCircle16_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -5.6442200403665641 26 -3.2461780964977645
-		 50 -5.6442200403665641;
+	setAttr -s 5 ".ktv[0:4]"  1 -5.6442200403665641 26 -3.2461780964977645
+		 50 -5.6442200403665641 55 -5.6442200403665694 60 -5.6442200403665641;
 createNode animCurveTA -n "nurbsCircle16_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 4.4139062980501586e-032 26 8.1164000253394995e-017
-		 50 4.4139062980501586e-032;
+	setAttr -s 5 ".ktv[0:4]"  1 4.4139062980501586e-032 26 8.1164000253394995e-017
+		 50 4.4139062980501586e-032 55 1.3359648240720379 60 4.4139062980501586e-032;
 createNode animCurveTA -n "nurbsCircle16_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 180 26 180 50 180;
+	setAttr -s 5 ".ktv[0:4]"  1 180 26 180 50 180 55 180 60 180;
 createNode animCurveTU -n "nurbsCircle16_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.67597259598317461 26 0.67597259598317461
-		 50 0.67597259598317461;
+	setAttr -s 5 ".ktv[0:4]"  1 0.67597259598317461 26 0.67597259598317461
+		 50 0.67597259598317461 55 0.67597259598317461 60 0.67597259598317461;
 createNode animCurveTU -n "nurbsCircle16_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.67597259598317461 26 0.67597259598317461
-		 50 0.67597259598317461;
+	setAttr -s 5 ".ktv[0:4]"  1 0.67597259598317461 26 0.67597259598317461
+		 50 0.67597259598317461 55 0.67597259598317461 60 0.67597259598317461;
 createNode animCurveTU -n "nurbsCircle16_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.67597259598317461 26 0.67597259598317461
-		 50 0.67597259598317461;
+	setAttr -s 5 ".ktv[0:4]"  1 0.67597259598317461 26 0.67597259598317461
+		 50 0.67597259598317461 55 0.67597259598317461 60 0.67597259598317461;
 createNode animCurveTU -n "nurbsCircle12_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
@@ -10060,43 +10068,43 @@ createNode animCurveTU -n "nurbsCircle12_scaleZ";
 createNode animCurveTU -n "nurbsCircle13_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 26 1 50 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 1 26 1 50 1 55 1 60 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTA -n "nurbsCircle13_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 4.2765412619456136 26 11.495971701888896
-		 50 4.2765412619456136;
+	setAttr -s 5 ".ktv[0:4]"  1 4.2765412619456136 26 11.495971701888896
+		 50 4.2765412619456136 55 2.2435208993022191 60 4.2765412619456136;
 createNode animCurveTA -n "nurbsCircle13_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 23.958618901949556 26 23.789838028776774
-		 50 23.958618901949556;
+	setAttr -s 5 ".ktv[0:4]"  1 23.958618901949556 26 23.789838028776774
+		 50 23.958618901949556 55 23.945234217752116 60 23.958618901949556;
 createNode animCurveTA -n "nurbsCircle13_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 89.999999999990905 26 92.925162031557946
-		 50 89.999999999990905;
+	setAttr -s 5 ".ktv[0:4]"  1 89.999999999990905 26 92.925162031557946
+		 50 89.999999999990905 55 89.174582389840637 60 89.999999999990905;
 createNode animCurveTU -n "nurbsCircle13_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.33670952356299994 26 0.33670952356299994
-		 50 0.33670952356299994;
+	setAttr -s 5 ".ktv[0:4]"  1 0.33670952356299994 26 0.33670952356299994
+		 50 0.33670952356299994 55 0.33670952356299994 60 0.33670952356299994;
 createNode animCurveTU -n "nurbsCircle13_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.33670952356299994 26 0.33670952356299994
-		 50 0.33670952356299994;
+	setAttr -s 5 ".ktv[0:4]"  1 0.33670952356299994 26 0.33670952356299994
+		 50 0.33670952356299994 55 0.33670952356299994 60 0.33670952356299994;
 createNode animCurveTU -n "nurbsCircle13_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.33670952356299994 26 0.33670952356299994
-		 50 0.33670952356299994;
+	setAttr -s 5 ".ktv[0:4]"  1 0.33670952356299994 26 0.33670952356299994
+		 50 0.33670952356299994 55 0.33670952356299994 60 0.33670952356299994;
 createNode animCurveTU -n "nurbsCircle3_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 26 1 50 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 1 26 1 50 1 55 1 60 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode pairBlend -n "pairBlend3";
 	setAttr ".txm" 2;
 	setAttr ".tym" 2;
@@ -10104,33 +10112,33 @@ createNode pairBlend -n "pairBlend3";
 createNode animCurveTA -n "pairBlend3_inRotateX1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -1.4894033664205411 26 -1.4894033664205411
-		 50 -1.4894033664205411;
+	setAttr -s 5 ".ktv[0:4]"  1 -1.4894033664205411 26 -1.4894033664205411
+		 50 -1.4894033664205411 55 -1.4894033664205411 60 -1.4894033664205411;
 createNode animCurveTA -n "pairBlend3_inRotateY1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 -0.14450219811450266 26 -0.14450219811450266
-		 50 -0.14450219811450266;
+	setAttr -s 5 ".ktv[0:4]"  1 -0.14450219811450266 26 -0.14450219811450266
+		 50 -0.14450219811450266 55 -0.14450219811450266 60 -0.14450219811450266;
 createNode animCurveTA -n "pairBlend3_inRotateZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 179.98644931323409 26 179.98644931323409
-		 50 179.98644931323409;
+	setAttr -s 5 ".ktv[0:4]"  1 179.98644931323409 26 179.98644931323409
+		 50 179.98644931323409 55 179.98644931323409 60 179.98644931323409;
 createNode animCurveTU -n "nurbsCircle3_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.29842501728608567 26 0.29842501728608567
-		 50 0.29842501728608567;
+	setAttr -s 5 ".ktv[0:4]"  1 0.29842501728608567 26 0.29842501728608567
+		 50 0.29842501728608567 55 0.29842501728608567 60 0.29842501728608567;
 createNode animCurveTU -n "nurbsCircle3_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.29842501728608567 26 0.29842501728608567
-		 50 0.29842501728608567;
+	setAttr -s 5 ".ktv[0:4]"  1 0.29842501728608567 26 0.29842501728608567
+		 50 0.29842501728608567 55 0.29842501728608567 60 0.29842501728608567;
 createNode animCurveTU -n "nurbsCircle3_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0.29842501728608567 26 0.29842501728608567
-		 50 0.29842501728608567;
+	setAttr -s 5 ".ktv[0:4]"  1 0.29842501728608567 26 0.29842501728608567
+		 50 0.29842501728608567 55 0.29842501728608567 60 0.29842501728608567;
 createNode animCurveTU -n "nurbsCircle15_visibility";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
@@ -10166,7 +10174,7 @@ createNode animCurveTU -n "nurbsCircle15_scaleZ";
 createNode animCurveTU -n "nurbsCircle2_blendOrient1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 50 0;
+	setAttr -s 4 ".ktv[0:3]"  26 0 50 0 55 0 60 0;
 createNode animCurveTU -n "nurbsCircle1_blendOrient1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
@@ -10174,15 +10182,293 @@ createNode animCurveTU -n "nurbsCircle1_blendOrient1";
 createNode animCurveTU -n "nurbsCircle3_blendOrient1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 50 0;
+	setAttr -s 4 ".ktv[0:3]"  26 0 50 0 55 0 60 0;
 createNode polyCube -n "polyCube2";
 	setAttr ".w" 0.83833467732025468;
 	setAttr ".h" 0.62845215338707261;
 	setAttr ".d" 1.9647821915161146;
 	setAttr ".cuv" 4;
+createNode animCurveTL -n "nurbsCircle5_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -3.4779288718737273 50 -3.4779288718737273;
+createNode animCurveTL -n "nurbsCircle5_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -1.4898195342678795 50 -1.4898195342678795;
+createNode animCurveTL -n "nurbsCircle5_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1.4641994840712194 50 1.4641994840712194;
+createNode animCurveTL -n "nurbsCircle6_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -3.3707322769528645 50 -3.3707322769528645;
+createNode animCurveTL -n "nurbsCircle6_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -4.0335228762266988 50 -4.0335228762266988;
+createNode animCurveTL -n "nurbsCircle6_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 5.6183646244530836 50 5.6183646244530836;
+createNode animCurveTL -n "nurbsCircle7_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 2.9153693115357688 50 2.9153693115357688;
+createNode animCurveTL -n "nurbsCircle7_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -4.1803616343441572 50 -4.1803616343441572;
+createNode animCurveTL -n "nurbsCircle7_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 5.3674117525303711 50 5.3674117525303711;
+createNode animCurveTL -n "nurbsCircle8_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -3.7479360031900466 50 -3.7479360031900466;
+createNode animCurveTL -n "nurbsCircle8_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 8.5186356647594845 50 8.5186356647594845;
+createNode animCurveTL -n "nurbsCircle8_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 9.7553737719100404 50 9.7553737719100404;
+createNode animCurveTL -n "nurbsCircle9_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 3.7050498964387408 25 3.2824188613246843
+		 50 3.7050498964387408;
+createNode animCurveTL -n "nurbsCircle9_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 8.5186356647594845 25 8.5186356647594845
+		 50 8.5186356647594845;
+createNode animCurveTL -n "nurbsCircle9_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 9.7553737719100422 25 9.7553737719100422
+		 50 9.7553737719100422;
+createNode animCurveTU -n "nurbsCircle8_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 50 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTA -n "nurbsCircle8_rotateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 90 50 90;
+createNode animCurveTA -n "nurbsCircle8_rotateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 5.8869450282519929e-017 50 5.8869450282519929e-017;
+createNode animCurveTA -n "nurbsCircle8_rotateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 180 50 180;
+createNode animCurveTU -n "nurbsCircle8_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.11319738528554026 50 0.11319738528554026;
+createNode animCurveTU -n "nurbsCircle8_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.11319738528554026 50 0.11319738528554026;
+createNode animCurveTU -n "nurbsCircle8_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.11319738528554026 50 0.11319738528554026;
+createNode animCurveTU -n "nurbsCircle9_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 25 1 50 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTA -n "nurbsCircle9_rotateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 90 25 90 50 90;
+createNode animCurveTA -n "nurbsCircle9_rotateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 5.8869450282519929e-017 25 5.8869450282519929e-017
+		 50 5.8869450282519929e-017;
+createNode animCurveTA -n "nurbsCircle9_rotateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 180 25 180 50 180;
+createNode animCurveTU -n "nurbsCircle9_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.11319738528554026 25 0.11319738528554026
+		 50 0.11319738528554026;
+createNode animCurveTU -n "nurbsCircle9_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.11319738528554026 25 0.11319738528554026
+		 50 0.11319738528554026;
+createNode animCurveTU -n "nurbsCircle9_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.11319738528554026 25 0.11319738528554026
+		 50 0.11319738528554026;
+createNode animCurveTU -n "nurbsCircle7_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 50 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTA -n "nurbsCircle7_rotateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 50 0;
+createNode animCurveTA -n "nurbsCircle7_rotateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 50 0;
+createNode animCurveTA -n "nurbsCircle7_rotateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 180 50 180;
+createNode animCurveTU -n "nurbsCircle7_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle7_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle7_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle6_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 50 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTA -n "nurbsCircle6_rotateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 50 0;
+createNode animCurveTA -n "nurbsCircle6_rotateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 50 0;
+createNode animCurveTA -n "nurbsCircle6_rotateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 180 50 180;
+createNode animCurveTU -n "nurbsCircle6_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle6_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle6_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle5_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 50 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode pairBlend -n "pairBlend4";
+	setAttr ".txm" 2;
+	setAttr ".tym" 2;
+	setAttr ".tzm" 2;
+createNode animCurveTA -n "pairBlend4_inRotateX1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -5.1887858971058698 50 -5.1887858971058698;
+createNode animCurveTA -n "pairBlend4_inRotateY1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 3.4916852750044565 50 3.4916852750044565;
+createNode animCurveTA -n "pairBlend4_inRotateZ1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 178.82500759810674 50 178.82500759810674;
+createNode animCurveTU -n "nurbsCircle5_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle5_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle5_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0.22477966924240528 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle5_blendOrient1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  50 0;
+createNode animCurveTU -n "nurbsCircle4_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.22477966924240528 25 0.22477966924240528
+		 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle4_blendOrient1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  25 0 50 0;
+createNode animCurveTU -n "nurbsCircle4_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 25 1 50 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTU -n "nurbsCircle4_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.22477966924240528 25 0.22477966924240528
+		 50 0.22477966924240528;
+createNode animCurveTU -n "nurbsCircle4_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.22477966924240528 25 0.22477966924240528
+		 50 0.22477966924240528;
+createNode animCurveTL -n "nurbsCircle4_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 3.0368155125039786 25 3.081593738903261
+		 50 3.0368155125039786;
+createNode animCurveTL -n "nurbsCircle4_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1.4641994840712187 25 1.4641994840712187
+		 50 1.4641994840712187;
+createNode animCurveTL -n "nurbsCircle4_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -1.5614186220631554 25 -1.5614186220631554
+		 50 -1.5614186220631554;
+createNode animCurveTA -n "pairBlend5_inRotateZ1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 182.35951108182192 25 182.35951108182192
+		 50 182.35951108182192;
+createNode animCurveTA -n "pairBlend5_inRotateY1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -7.7023787498866039 25 -7.7023787498866039
+		 50 -7.7023787498866039;
+createNode animCurveTA -n "pairBlend5_inRotateX1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -5.3304269117970184 25 -5.3304269117970184
+		 50 -5.3304269117970184;
+createNode pairBlend -n "pairBlend5";
+	setAttr ".txm" 2;
+	setAttr ".tym" 2;
+	setAttr ".tzm" 2;
 select -ne :time1;
-	setAttr ".o" 45;
-	setAttr ".unw" 45;
+	setAttr ".o" 55;
+	setAttr ".unw" 55;
 select -ne :renderPartition;
 	setAttr -s 2 ".st";
 select -ne :renderGlobalsList1;
@@ -10629,9 +10915,17 @@ connectAttr "joint45.jo" "|nurbsCircle3|nurbsCircle3_orientConstraint1.tg[0].tjo
 		;
 connectAttr "|nurbsCircle3|nurbsCircle3_orientConstraint1.w0" "|nurbsCircle3|nurbsCircle3_orientConstraint1.tg[0].tw"
 		;
-connectAttr "nurbsCircle4_orientConstraint1.crx" "nurbsCircle4.rx";
-connectAttr "nurbsCircle4_orientConstraint1.cry" "nurbsCircle4.ry";
-connectAttr "nurbsCircle4_orientConstraint1.crz" "nurbsCircle4.rz";
+connectAttr "nurbsCircle4_translateX.o" "nurbsCircle4.tx";
+connectAttr "nurbsCircle4_translateY.o" "nurbsCircle4.ty";
+connectAttr "nurbsCircle4_translateZ.o" "nurbsCircle4.tz";
+connectAttr "pairBlend5.orx" "nurbsCircle4.rx";
+connectAttr "pairBlend5.ory" "nurbsCircle4.ry";
+connectAttr "pairBlend5.orz" "nurbsCircle4.rz";
+connectAttr "nurbsCircle4_visibility.o" "nurbsCircle4.v";
+connectAttr "nurbsCircle4_blendOrient1.o" "nurbsCircle4.blendOrient1";
+connectAttr "nurbsCircle4_scaleX.o" "nurbsCircle4.sx";
+connectAttr "nurbsCircle4_scaleY.o" "nurbsCircle4.sy";
+connectAttr "nurbsCircle4_scaleZ.o" "nurbsCircle4.sz";
 connectAttr "nurbsCircle4.ro" "nurbsCircle4_orientConstraint1.cro";
 connectAttr "nurbsCircle4.pim" "nurbsCircle4_orientConstraint1.cpim";
 connectAttr "joint42.r" "nurbsCircle4_orientConstraint1.tg[0].tr";
@@ -10640,9 +10934,17 @@ connectAttr "joint42.pm" "nurbsCircle4_orientConstraint1.tg[0].tpm";
 connectAttr "joint42.jo" "nurbsCircle4_orientConstraint1.tg[0].tjo";
 connectAttr "nurbsCircle4_orientConstraint1.w0" "nurbsCircle4_orientConstraint1.tg[0].tw"
 		;
-connectAttr "nurbsCircle5_orientConstraint1.crx" "nurbsCircle5.rx";
-connectAttr "nurbsCircle5_orientConstraint1.cry" "nurbsCircle5.ry";
-connectAttr "nurbsCircle5_orientConstraint1.crz" "nurbsCircle5.rz";
+connectAttr "nurbsCircle5_translateX.o" "nurbsCircle5.tx";
+connectAttr "nurbsCircle5_translateY.o" "nurbsCircle5.ty";
+connectAttr "nurbsCircle5_translateZ.o" "nurbsCircle5.tz";
+connectAttr "pairBlend4.orx" "nurbsCircle5.rx";
+connectAttr "pairBlend4.ory" "nurbsCircle5.ry";
+connectAttr "pairBlend4.orz" "nurbsCircle5.rz";
+connectAttr "nurbsCircle5_visibility.o" "nurbsCircle5.v";
+connectAttr "nurbsCircle5_blendOrient1.o" "nurbsCircle5.blendOrient1";
+connectAttr "nurbsCircle5_scaleX.o" "nurbsCircle5.sx";
+connectAttr "nurbsCircle5_scaleY.o" "nurbsCircle5.sy";
+connectAttr "nurbsCircle5_scaleZ.o" "nurbsCircle5.sz";
 connectAttr "nurbsCircle5.ro" "nurbsCircle5_orientConstraint1.cro";
 connectAttr "nurbsCircle5.pim" "nurbsCircle5_orientConstraint1.cpim";
 connectAttr "joint38.r" "nurbsCircle5_orientConstraint1.tg[0].tr";
@@ -10651,6 +10953,46 @@ connectAttr "joint38.pm" "nurbsCircle5_orientConstraint1.tg[0].tpm";
 connectAttr "joint38.jo" "nurbsCircle5_orientConstraint1.tg[0].tjo";
 connectAttr "nurbsCircle5_orientConstraint1.w0" "nurbsCircle5_orientConstraint1.tg[0].tw"
 		;
+connectAttr "nurbsCircle6_translateX.o" "nurbsCircle6.tx";
+connectAttr "nurbsCircle6_translateY.o" "nurbsCircle6.ty";
+connectAttr "nurbsCircle6_translateZ.o" "nurbsCircle6.tz";
+connectAttr "nurbsCircle6_visibility.o" "nurbsCircle6.v";
+connectAttr "nurbsCircle6_rotateX.o" "nurbsCircle6.rx";
+connectAttr "nurbsCircle6_rotateY.o" "nurbsCircle6.ry";
+connectAttr "nurbsCircle6_rotateZ.o" "nurbsCircle6.rz";
+connectAttr "nurbsCircle6_scaleX.o" "nurbsCircle6.sx";
+connectAttr "nurbsCircle6_scaleY.o" "nurbsCircle6.sy";
+connectAttr "nurbsCircle6_scaleZ.o" "nurbsCircle6.sz";
+connectAttr "nurbsCircle7_translateX.o" "nurbsCircle7.tx";
+connectAttr "nurbsCircle7_translateY.o" "nurbsCircle7.ty";
+connectAttr "nurbsCircle7_translateZ.o" "nurbsCircle7.tz";
+connectAttr "nurbsCircle7_visibility.o" "nurbsCircle7.v";
+connectAttr "nurbsCircle7_rotateX.o" "nurbsCircle7.rx";
+connectAttr "nurbsCircle7_rotateY.o" "nurbsCircle7.ry";
+connectAttr "nurbsCircle7_rotateZ.o" "nurbsCircle7.rz";
+connectAttr "nurbsCircle7_scaleX.o" "nurbsCircle7.sx";
+connectAttr "nurbsCircle7_scaleY.o" "nurbsCircle7.sy";
+connectAttr "nurbsCircle7_scaleZ.o" "nurbsCircle7.sz";
+connectAttr "nurbsCircle8_translateX.o" "nurbsCircle8.tx";
+connectAttr "nurbsCircle8_translateY.o" "nurbsCircle8.ty";
+connectAttr "nurbsCircle8_translateZ.o" "nurbsCircle8.tz";
+connectAttr "nurbsCircle8_visibility.o" "nurbsCircle8.v";
+connectAttr "nurbsCircle8_rotateX.o" "nurbsCircle8.rx";
+connectAttr "nurbsCircle8_rotateY.o" "nurbsCircle8.ry";
+connectAttr "nurbsCircle8_rotateZ.o" "nurbsCircle8.rz";
+connectAttr "nurbsCircle8_scaleX.o" "nurbsCircle8.sx";
+connectAttr "nurbsCircle8_scaleY.o" "nurbsCircle8.sy";
+connectAttr "nurbsCircle8_scaleZ.o" "nurbsCircle8.sz";
+connectAttr "nurbsCircle9_translateX.o" "nurbsCircle9.tx";
+connectAttr "nurbsCircle9_translateY.o" "nurbsCircle9.ty";
+connectAttr "nurbsCircle9_translateZ.o" "nurbsCircle9.tz";
+connectAttr "nurbsCircle9_rotateX.o" "nurbsCircle9.rx";
+connectAttr "nurbsCircle9_rotateY.o" "nurbsCircle9.ry";
+connectAttr "nurbsCircle9_rotateZ.o" "nurbsCircle9.rz";
+connectAttr "nurbsCircle9_visibility.o" "nurbsCircle9.v";
+connectAttr "nurbsCircle9_scaleX.o" "nurbsCircle9.sx";
+connectAttr "nurbsCircle9_scaleY.o" "nurbsCircle9.sy";
+connectAttr "nurbsCircle9_scaleZ.o" "nurbsCircle9.sz";
 connectAttr "|nurbsCircle10|nurbsCircle10_parentConstraint1.ctx" "nurbsCircle10.tx"
 		;
 connectAttr "|nurbsCircle10|nurbsCircle10_parentConstraint1.cty" "nurbsCircle10.ty"
@@ -13745,6 +14087,20 @@ connectAttr "nurbsCircle3.blendOrient1" "pairBlend3.w";
 connectAttr "pairBlend3_inRotateX1.o" "pairBlend3.irx1";
 connectAttr "pairBlend3_inRotateY1.o" "pairBlend3.iry1";
 connectAttr "pairBlend3_inRotateZ1.o" "pairBlend3.irz1";
+connectAttr "nurbsCircle5_orientConstraint1.crx" "pairBlend4.irx2";
+connectAttr "nurbsCircle5_orientConstraint1.cry" "pairBlend4.iry2";
+connectAttr "nurbsCircle5_orientConstraint1.crz" "pairBlend4.irz2";
+connectAttr "nurbsCircle5.blendOrient1" "pairBlend4.w";
+connectAttr "pairBlend4_inRotateX1.o" "pairBlend4.irx1";
+connectAttr "pairBlend4_inRotateY1.o" "pairBlend4.iry1";
+connectAttr "pairBlend4_inRotateZ1.o" "pairBlend4.irz1";
+connectAttr "nurbsCircle4_orientConstraint1.crx" "pairBlend5.irx2";
+connectAttr "nurbsCircle4_orientConstraint1.cry" "pairBlend5.iry2";
+connectAttr "nurbsCircle4_orientConstraint1.crz" "pairBlend5.irz2";
+connectAttr "nurbsCircle4.blendOrient1" "pairBlend5.w";
+connectAttr "pairBlend5_inRotateX1.o" "pairBlend5.irx1";
+connectAttr "pairBlend5_inRotateY1.o" "pairBlend5.iry1";
+connectAttr "pairBlend5_inRotateZ1.o" "pairBlend5.irz1";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
