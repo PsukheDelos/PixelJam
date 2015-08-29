@@ -17,6 +17,7 @@ public class GuestVisionCone : MonoBehaviour {
             lines[i].GetComponent<LineRenderer>().SetVertexCount(2);
             lines[i].GetComponent<LineRenderer>().SetWidth(0.1f, 0.1f);
             lines[i].GetComponent<LineRenderer>().material = new Material(Shader.Find("UI/Unlit/Transparent"));
+            lines[i].name = "Vision Ray";
         }
     }
 

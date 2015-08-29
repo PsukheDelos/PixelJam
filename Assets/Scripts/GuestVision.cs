@@ -19,7 +19,7 @@ public class GuestVision : MonoBehaviour {
             {
                 if (Physics.Linecast(transform.position + Vector3.up, player.transform.position + Vector3.up, out hit))
                 {
-                    if (hit.collider.tag == "Player")
+                    if (hit.collider.tag == "Player" && player.GetComponent<ObservedBehaviour>().seeFiredShot())
                     {
                         GetComponent<GuestKnowledge>().setKnowledge(1);
                     }

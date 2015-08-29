@@ -5,7 +5,9 @@ public class GuestState : MonoBehaviour
 {
     public State state;
     public float panicDuration;
-    private float panicCooldown;
+    public float gossipDuration;
+    public float panicCooldown;
+    public float gossipCooldown;
 
     public enum State
     {
@@ -32,6 +34,16 @@ public class GuestState : MonoBehaviour
         if (state == State.PANIC)
         {
             panicCooldown -= Time.deltaTime;
+            gossipCooldown -= Time.deltaTime;
+            if (panicCooldown < 0)
+            {
+                setState(State.WANDER);
+            }
+        }
+        if (state == State.GOSSIP)
+        {
+            panicCooldown -= Time.deltaTime;
+            gossipCooldown -= Time.deltaTime;
             if (panicCooldown < 0)
             {
                 setState(State.WANDER);
@@ -69,7 +81,8 @@ public class GuestState : MonoBehaviour
             case State.WANDER:
                 GetComponent<NavMeshAgent>().speed = 2; break;
             case State.GOSSIP:
-                GetComponent<NavMeshAgent>().speed = 0.2f; break;
+                GetComponent<NavMeshAgent>().speed = 0;
+                gossipCooldown = gossipDuration; break;
         }
     }
 }
