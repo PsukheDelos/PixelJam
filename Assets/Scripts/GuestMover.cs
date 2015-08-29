@@ -26,9 +26,22 @@ public class GuestMover : MonoBehaviour
             started = true;
             nma.SetDestination(transform.position);
         }
-        if ((nma.isActiveAndEnabled && Vector3.Magnitude(nma.velocity) < 0.001) || Vector3.Magnitude(transform.position - nma.destination) < wanderThreshold)
+        if ((nma.isActiveAndEnabled && Vector3.Magnitude(nma.velocity) < 0.001) ||
+            (Vector3.Magnitude(transform.position - nma.destination) < wanderThreshold
+            && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
         {
-            direction = Random.insideUnitSphere * wanderDistance;
+            if (GetComponent<GuestState>().getState() == GuestState.State.GOSSIP)
+            {
+                direction = Vector3.zero;
+            }
+            if (GetComponent<GuestState>().getState() == GuestState.State.WANDER)
+            {
+                direction = Random.insideUnitSphere * wanderDistance;
+            }
+            if (GetComponent<GuestState>().getState() == GuestState.State.PANIC)
+            {
+                direction = Random.insideUnitSphere * panicDistance;
+            }
             direction += transform.position;
             NavMeshHit hit;
             NavMesh.SamplePosition(direction, out hit, wanderDistance, 1);

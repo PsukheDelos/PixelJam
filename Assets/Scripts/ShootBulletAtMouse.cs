@@ -44,6 +44,10 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
+                foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest"))
+                {
+                    o.GetComponent<GuestState>().setState(GuestState.State.PANIC);
+                }
             }
             if (type == WeaponType.PISTOL && !fired)
             {
@@ -53,6 +57,10 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 40, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
+                foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest"))
+                {
+                    o.GetComponent<GuestState>().setState(GuestState.State.WANDER);
+                }
             }
             if (type == WeaponType.KNIFE && !fired)
             {
@@ -61,6 +69,10 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 GameObject myknife = GameObject.Instantiate(knifeArea, transform.position + Vector3.up + transform.forward, transform.rotation) as GameObject;
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), myknife.GetComponentInChildren<Collider>());
                 GameObject.Destroy(myknife, 0.2f);
+                foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest"))
+                {
+                    o.GetComponent<GuestState>().setState(GuestState.State.GOSSIP);
+                }
             }
         }
         if (Input.GetAxis("Fire1") < 0.01)
