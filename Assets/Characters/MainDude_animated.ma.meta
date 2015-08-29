@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: c08e71ba54bb89544aedcaaf41adc297
+timeCreated: 1440836031
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: body
+    100002: bot_bones1
+    100004: bot_controls1
+    100006: head
+    100008: ikHandle1
+    100010: ikHandle2
+    100012: ikHandle3
+    100014: ikHandle4
+    100016: ikHandle5
+    100018: ikHandle6
+    100020: ikHandle7
+    100022: joint1
+    100024: joint10
+    100026: joint11
+    100028: joint12
+    100030: joint13
+    100032: joint14
+    100034: joint15
+    100036: joint16
+    100038: joint17
+    100040: joint18
+    100042: joint19
+    100044: joint2
+    100046: joint20
+    100048: joint21
+    100050: joint22
+    100052: joint23
+    100054: joint24
+    100056: joint25
+    100058: joint26
+    100060: joint27
+    100062: joint28
+    100064: joint29
+    100066: joint3
+    100068: joint30
+    100070: joint31
+    100072: joint32
+    100074: joint33
+    100076: joint34
+    100078: joint36
+    100080: joint37
+    100082: joint38
+    100084: joint39
+    100086: joint4
+    100088: joint40
+    100090: joint41
+    100092: joint42
+    100094: joint43
+    100096: joint44
+    100098: joint45
+    100100: joint46
+    100102: joint5
+    100104: joint6
+    100106: joint7
+    100108: joint8
+    100110: joint9
+    100112: Left_arm
+    100114: left_hand
+    100116: legs
+    100118: //RootNode
+    100120: nurbsCircle1
+    100122: nurbsCircle10
+    100124: nurbsCircle12
+    100126: nurbsCircle13
+    100128: nurbsCircle14
+    100130: nurbsCircle15
+    100132: nurbsCircle16
+    100134: nurbsCircle17
+    100136: nurbsCircle2
+    100138: nurbsCircle3
+    100140: nurbsCircle4
+    100142: nurbsCircle5
+    100144: nurbsCircle6
+    100146: nurbsCircle7
+    100148: nurbsCircle8
+    100150: nurbsCircle9
+    100152: pCube1
+    100154: pCube10
+    100156: pCube10 1
+    100158: pCube14
+    100160: pCube14 1
+    100162: pCube15
+    100164: pCube15 1
+    100166: pCube16
+    100168: pCube16 1
+    100170: pCube18
+    100172: pCube18 1
+    100174: pCube19
+    100176: pCube19 1
+    100178: pCube2
+    100180: pCube20
+    100182: pCube20 1
+    100184: pCube21
+    100186: pCube21 1
+    100188: pCube22
+    100190: pCube22 1
+    100192: pCube23
+    100194: pCube23 1
+    100196: pCube24
+    100198: pCube25
+    100200: pCube3
+    100202: pCube4
+    100204: pCube5
+    100206: pCube6
+    100208: pCube9
+    100210: pCube9 1
+    100212: rig
+    100214: right_arm
+    100216: right_hand
+    100218: top_bones
+    100220: top_controls1
+    100222: torso
+    400000: body
+    400002: bot_bones1
+    400004: bot_controls1
+    400006: head
+    400008: ikHandle1
+    400010: ikHandle2
+    400012: ikHandle3
+    400014: ikHandle4
+    400016: ikHandle5
+    400018: ikHandle6
+    400020: ikHandle7
+    400022: joint1
+    400024: joint10
+    400026: joint11
+    400028: joint12
+    400030: joint13
+    400032: joint14
+    400034: joint15
+    400036: joint16
+    400038: joint17
+    400040: joint18
+    400042: joint19
+    400044: joint2
+    400046: joint20
+    400048: joint21
+    400050: joint22
+    400052: joint23
+    400054: joint24
+    400056: joint25
+    400058: joint26
+    400060: joint27
+    400062: joint28
+    400064: joint29
+    400066: joint3
+    400068: joint30
+    400070: joint31
+    400072: joint32
+    400074: joint33
+    400076: joint34
+    400078: joint36
+    400080: joint37
+    400082: joint38
+    400084: joint39
+    400086: joint4
+    400088: joint40
+    400090: joint41
+    400092: joint42
+    400094: joint43
+    400096: joint44
+    400098: joint45
+    400100: joint46
+    400102: joint5
+    400104: joint6
+    400106: joint7
+    400108: joint8
+    400110: joint9
+    400112: Left_arm
+    400114: left_hand
+    400116: legs
+    400118: //RootNode
+    400120: nurbsCircle1
+    400122: nurbsCircle10
+    400124: nurbsCircle12
+    400126: nurbsCircle13
+    400128: nurbsCircle14
+    400130: nurbsCircle15
+    400132: nurbsCircle16
+    400134: nurbsCircle17
+    400136: nurbsCircle2
+    400138: nurbsCircle3
+    400140: nurbsCircle4
+    400142: nurbsCircle5
+    400144: nurbsCircle6
+    400146: nurbsCircle7
+    400148: nurbsCircle8
+    400150: nurbsCircle9
+    400152: pCube1
+    400154: pCube10
+    400156: pCube10 1
+    400158: pCube14
+    400160: pCube14 1
+    400162: pCube15
+    400164: pCube15 1
+    400166: pCube16
+    400168: pCube16 1
+    400170: pCube18
+    400172: pCube18 1
+    400174: pCube19
+    400176: pCube19 1
+    400178: pCube2
+    400180: pCube20
+    400182: pCube20 1
+    400184: pCube21
+    400186: pCube21 1
+    400188: pCube22
+    400190: pCube22 1
+    400192: pCube23
+    400194: pCube23 1
+    400196: pCube24
+    400198: pCube25
+    400200: pCube3
+    400202: pCube4
+    400204: pCube5
+    400206: pCube6
+    400208: pCube9
+    400210: pCube9 1
+    400212: rig
+    400214: right_arm
+    400216: right_hand
+    400218: top_bones
+    400220: top_controls1
+    400222: torso
+    4300000: pCube25
+    4300002: pCube24
+    4300004: torso
+    4300006: pCube9
+    4300008: pCube10
+    4300010: pCube14
+    4300012: pCube15
+    4300014: pCube16
+    4300016: pCube18
+    4300018: pCube19
+    4300020: pCube20
+    4300022: pCube21
+    4300024: pCube22
+    4300026: pCube23
+    4300028: pCube9
+    4300030: pCube10
+    4300032: pCube14
+    4300034: pCube15
+    4300036: pCube16
+    4300038: pCube18
+    4300040: pCube19
+    4300042: pCube20
+    4300044: pCube21
+    4300046: pCube22
+    4300048: pCube23
+    4300050: pCube1
+    4300052: pCube2
+    4300054: pCube3
+    4300056: pCube4
+    4300058: pCube5
+    4300060: pCube6
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCube1
+    13700002: pCube10
+    13700004: pCube10 1
+    13700006: pCube14
+    13700008: pCube14 1
+    13700010: pCube15
+    13700012: pCube15 1
+    13700014: pCube16
+    13700016: pCube16 1
+    13700018: pCube18
+    13700020: pCube18 1
+    13700022: pCube19
+    13700024: pCube19 1
+    13700026: pCube2
+    13700028: pCube20
+    13700030: pCube20 1
+    13700032: pCube21
+    13700034: pCube21 1
+    13700036: pCube22
+    13700038: pCube22 1
+    13700040: pCube23
+    13700042: pCube23 1
+    13700044: pCube24
+    13700046: pCube25
+    13700048: pCube3
+    13700050: pCube4
+    13700052: pCube5
+    13700054: pCube6
+    13700056: pCube9
+    13700058: pCube9 1
+    13700060: torso
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
