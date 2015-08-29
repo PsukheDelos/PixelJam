@@ -88,6 +88,10 @@ ModelImporter:
     100160: top_bones
     100162: top_controls1
     100164: torso
+    100166: pistol
+    100168: pistol1
+    100170: pistol2
+    100172: pistol3
     400000: body
     400002: head
     400004: ikHandle1
@@ -171,6 +175,18 @@ ModelImporter:
     400160: top_bones
     400162: top_controls1
     400164: torso
+    400166: pistol
+    400168: pistol1
+    400170: pistol2
+    400172: pistol3
+    2300000: pistol
+    2300002: pistol1
+    2300004: pistol2
+    2300006: pistol3
+    3300000: pistol
+    3300002: pistol1
+    3300004: pistol2
+    3300006: pistol3
     4300000: pCube25
     4300002: pCube24
     4300004: torso
@@ -196,6 +212,10 @@ ModelImporter:
     4300044: pCube21
     4300046: pCube22
     4300048: pCube23
+    4300050: pistol
+    4300052: pistol1
+    4300054: pistol2
+    4300056: pistol3
     7400000: Cutscene
     7400002: PistolIdle
     7400004: TommyDraw
@@ -339,6 +359,14 @@ ModelImporter:
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
       - path: body/torso
+        weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
         weight: 1
       - path: rig
         weight: 1
@@ -532,6 +560,14 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/top_bones
@@ -723,6 +759,14 @@ ModelImporter:
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
       - path: body/torso
+        weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
         weight: 1
       - path: rig
         weight: 1
@@ -916,6 +960,14 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/top_bones
@@ -1107,6 +1159,14 @@ ModelImporter:
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
       - path: body/torso
+        weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
         weight: 1
       - path: rig
         weight: 1
@@ -1300,6 +1360,14 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/top_bones
@@ -1491,6 +1559,14 @@ ModelImporter:
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
       - path: body/torso
+        weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
         weight: 1
       - path: rig
         weight: 1
@@ -1684,6 +1760,14 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/top_bones
@@ -1876,6 +1960,14 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/top_bones
@@ -2067,6 +2159,14 @@ ModelImporter:
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
       - path: body/torso
+        weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
         weight: 1
       - path: rig
         weight: 1
