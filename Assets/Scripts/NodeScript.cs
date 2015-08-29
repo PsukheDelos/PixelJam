@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class NodeScript : MonoBehaviour {
@@ -16,7 +16,6 @@ public class NodeScript : MonoBehaviour {
 		for (var i = 0; i < nodes.Length; i++) {
 			Debug.DrawLine(transform.position, nodes[i].position);
 		}
-
 	}
 
 	public Transform getNextNode(){
