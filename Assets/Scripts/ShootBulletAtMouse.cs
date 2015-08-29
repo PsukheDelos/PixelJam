@@ -69,7 +69,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 GameObject myknife = GameObject.Instantiate(knifeArea, transform.position + Vector3.up + transform.forward, transform.rotation) as GameObject;
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), myknife.GetComponentInChildren<Collider>());
                 GameObject.Destroy(myknife, 0.2f);
-                GetComponent<ObservedBehaviour>().firedShot();
+                GetComponent<ObservedBehaviour>().swungKnife();
             }
         }
         if (Input.GetAxis("Fire1") < 0.01)

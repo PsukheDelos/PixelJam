@@ -10,7 +10,7 @@ public class GuestVision : MonoBehaviour {
         if (Vector3.Magnitude(player.transform.position - transform.position) < GetComponent<GuestVisionCone>().length)
         {
 
-            if (player.GetComponent<ObservedBehaviour>().seeFiredShot())
+            if (player.GetComponent<ObservedBehaviour>().hearFiredShot())
             {
                 GetComponent<GuestState>().setState(GuestState.State.PANIC);
             }
@@ -19,7 +19,7 @@ public class GuestVision : MonoBehaviour {
             {
                 if (Physics.Linecast(transform.position + Vector3.up, player.transform.position + Vector3.up, out hit))
                 {
-                    if (hit.collider.tag == "Player" && player.GetComponent<ObservedBehaviour>().seeFiredShot())
+                    if (hit.collider.tag == "Player" && player.GetComponent<ObservedBehaviour>().seeAttack())
                     {
                         GetComponent<GuestKnowledge>().setKnowledge(1);
                     }

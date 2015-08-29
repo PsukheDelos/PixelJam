@@ -4,24 +4,41 @@ using System.Collections;
 public class ObservedBehaviour : MonoBehaviour
 {
     public float fireCooldown;
-    public float myCooldown;
+    public float myVisualCooldown;
+    public float myAudioCooldown;
 	
 	// Update is called once per frame
 	void Update () {
-        myCooldown -= Time.deltaTime;
-        if (myCooldown < 0)
+        myVisualCooldown -= Time.deltaTime;
+        if (myVisualCooldown < 0)
         {
-            myCooldown = 0;
+            myVisualCooldown = 0;
+        }
+        myAudioCooldown -= Time.deltaTime;
+        if (myAudioCooldown < 0)
+        {
+            myAudioCooldown = 0;
         }
 	}
 
     public void firedShot()
     {
-        myCooldown = fireCooldown;
+        myVisualCooldown = fireCooldown;
+        myAudioCooldown = fireCooldown;
     }
 
-    public bool seeFiredShot()
+    public void swungKnife()
     {
-        return myCooldown > 0;
+        myVisualCooldown = fireCooldown;
+    }
+
+    public bool hearFiredShot()
+    {
+        return myAudioCooldown > 0;
+    }
+
+    public bool seeAttack()
+    {
+        return myVisualCooldown > 0;
     }
 }
