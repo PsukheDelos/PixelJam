@@ -5,43 +5,43 @@ public class GuestMover : MonoBehaviour
 {
     public float wanderDistance;
     public float panicDistance;
-    public float wanderThreshold;
+    public float targetThreshold;
+    public GameObject room;
 
     private Vector3 direction;
     private NavMeshAgent nma;
     private bool pathing;
+    private GameObject targetNode;
+    private float waitTime;
 
     // Use this for initialization
     void Start()
     {
-        nma.SetDestination(transform.position);
+        targetNode = room.GetComponent<RoomScript>().getNearestNode(transform);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((nma.isActiveAndEnabled && Vector3.Magnitude(nma.velocity) < 0.1) ||
-            (Vector3.Magnitude(transform.position - nma.destination) < wanderThreshold
-            && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
+        waitTime -= Time.deltaTime;
+        if (waitTime < 0)
         {
-            if (GetComponent<GuestState>().getState() == GuestState.State.GOSSIP)
+            if ((Vector3.Magnitude(nma.velocity) < 0.1) ||
+                (Vector3.Magnitude(transform.position - nma.destination) < targetThreshold
+                && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
             {
-                direction = Vector3.zero;
+                if (GetComponent<GuestState>().getState() == GuestState.State.WANDER)
+                {
+                    targetNode = targetNode.GetComponent<NodeScript>().getNextNode();
+                }
+                if (GetComponent<GuestState>().getState() == GuestState.State.PANIC)
+                {
+                    targetNode = room.GetComponent<RoomScript>().getWorld().GetComponent<WorldScript>().getNewRoom(room).GetComponent<RoomScript>().getRandomNode();
+                }
+                nma.SetDestination(targetNode.transform.position);
             }
-            if (GetComponent<GuestState>().getState() == GuestState.State.WANDER)
-            {
-                direction = Random.insideUnitSphere * wanderDistance;
-            }
-            if (GetComponent<GuestState>().getState() == GuestState.State.PANIC)
-            {
-                direction = Random.insideUnitSphere * panicDistance;
-            }
-            direction += transform.position;
-            NavMeshHit hit;
-            NavMesh.SamplePosition(direction, out hit, wanderDistance, 1);
-            nma.SetDestination(hit.position);
+            Debug.DrawLine(transform.position, nma.destination, Color.green);
         }
-        Debug.DrawLine(transform.position, nma.destination, Color.green);
     }
 
     public void panic(GameObject source)

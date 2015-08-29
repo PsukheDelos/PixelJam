@@ -3,7 +3,8 @@ using System.Collections;
 
 public class RoomScript : MonoBehaviour {
 
-	public Transform[] nodes = {};
+	public GameObject[] nodes = {};
+    public GameObject world;
 
 	// Use this for initialization
 	void Start () {
@@ -15,15 +16,15 @@ public class RoomScript : MonoBehaviour {
 
 	}
 
-	public Transform getRandomNode(){
+	public GameObject getRandomNode(){
 		return nodes[Random.Range(0, nodes.Length)];
 	}
 
-	public Transform getNearestNode (Transform pos) {
-		var closestDistance = (nodes[0].position - pos.position).sqrMagnitude;
+	public GameObject getNearestNode (Transform pos) {
+		var closestDistance = (nodes[0].transform.position - pos.position).sqrMagnitude;
 		var nearestNodeIndex = 0;
 		for (var i = 1; i < nodes.Length; i++) {
-			var thisDistance = (nodes[i].position - pos.position).sqrMagnitude;
+			var thisDistance = (nodes[i].transform.position - pos.position).sqrMagnitude;
 			if (thisDistance < closestDistance) {
 				closestDistance = thisDistance;
 				nearestNodeIndex = i;
@@ -31,4 +32,9 @@ public class RoomScript : MonoBehaviour {
 		}
 		return nodes[nearestNodeIndex];
 	}
+
+    public GameObject getWorld()
+    {
+        return world;
+    }
 }

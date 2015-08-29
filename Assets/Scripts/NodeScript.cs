@@ -4,7 +4,7 @@ using System.Collections;
 public class NodeScript : MonoBehaviour {
 
 	public float duration;
-	public Transform[] nodes = {};
+	public GameObject[] nodes = {};
 
 	// Use this for initialization
 	void Start () {
@@ -14,11 +14,11 @@ public class NodeScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		for (var i = 0; i < nodes.Length; i++) {
-			Debug.DrawLine(transform.position, nodes[i].position);
+			Debug.DrawLine(transform.position, nodes[i].transform.position);
 		}
 	}
 
-	public Transform getNextNode(){
+	public GameObject getNextNode(){
 		return nodes[Random.Range(0, nodes.Length)];
 	}
 
