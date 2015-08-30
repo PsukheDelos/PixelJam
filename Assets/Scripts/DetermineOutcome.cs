@@ -8,13 +8,17 @@ public class DetermineOutcome : MonoBehaviour {
     private int totalGuests;
     private int currentGuests;
 	private float time;
+
 	public GameObject TimeUI;
+	public GameObject GameOverUI;
+	public GameObject Player;
+	public GameObject Reticle;
 
 
 	// Use this for initialization
 	void Start () {
         totalGuests = GameObject.FindGameObjectsWithTag("Guest").Length;
-		time = 300f; 
+		time = 30f; 
 	}
 	
 	// Update is called once per frame
@@ -25,12 +29,25 @@ public class DetermineOutcome : MonoBehaviour {
 	    foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest")){
             score = Mathf.Max(score, o.GetComponent<GuestKnowledge>().getKnowledge());
         }
-		int minutes = Mathf.FloorToInt(time / 60F);
-		int seconds = Mathf.FloorToInt(time - minutes * 60);
-		TimeUI.GetComponent<Text> ().text = string.Format("{0:0}:{1:00}", minutes, seconds);
+
+		if (time < 0) {
+			GameOver();
+		}else{
+			int minutes = Mathf.FloorToInt(time / 60F);
+			int seconds = Mathf.FloorToInt(time - minutes * 60);
+			TimeUI.GetComponent<Text> ().text = string.Format("{0:0}:{1:00}", minutes, seconds);
+		}
 	}
 
     void OnGUI () {
         GUI.Label(screenrect, "\nCurrent max knowledge: " + score * 100 + "%.\nCurrent kills: " + (totalGuests - currentGuests) + ".");
     }
+
+	public void GameOver(){
+		Time.timeScale = 0;
+		TimeUI.SetActive(false);
+		GameOverUI.SetActive(true);
+		Player.GetComponent<LookAtMouse>().enabled = false;
+		Reticle.GetComponent<StickToMouse>().enabled = false;
+	}
 }

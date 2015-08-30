@@ -27,7 +27,6 @@ public class ShootBulletAtMouse : MonoBehaviour {
     private bool fired;
     private bool switched;
     private float cooldown;
-    private Rect screen = new Rect(0, 0, Screen.width, Screen.height);
 
 	private int tommy_ammo = 40;
 	private int pistol_ammo = 6;
@@ -127,9 +126,5 @@ public class ShootBulletAtMouse : MonoBehaviour {
             switched = false;
         }
 	}
-
-    void OnGUI()
-    {
-        GUI.Label(screen, "" + type);
-    }
+	
 }
