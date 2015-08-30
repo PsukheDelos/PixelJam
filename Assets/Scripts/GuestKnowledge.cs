@@ -4,7 +4,10 @@ using System.Collections;
 public class GuestKnowledge : MonoBehaviour {
     public float knowledge;
     public float maxLearn;
+    public float spotLearn;
     public float learnRate;
+
+    private bool spotted;
 
     void Update()
     {
@@ -33,5 +36,14 @@ public class GuestKnowledge : MonoBehaviour {
     public void setKnowledge(float amount)
     {
         knowledge = amount;
+    }
+
+    public void spot()
+    {
+        if (!spotted)
+        {
+            spotted = true;
+            addKnowledge(spotLearn);
+        }
     }
 }

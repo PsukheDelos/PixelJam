@@ -9,6 +9,8 @@ public class GuestState : MonoBehaviour
     public float panicCooldown;
     public float gossipCooldown;
 
+    private Animator anim;
+
     public enum State
     {
         WANDER,
@@ -18,6 +20,7 @@ public class GuestState : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         switch (state)
         {
             case State.PANIC:
@@ -44,10 +47,16 @@ public class GuestState : MonoBehaviour
         {
             panicCooldown -= Time.deltaTime;
             gossipCooldown -= Time.deltaTime;
-            if (panicCooldown < 0)
+            if (gossipCooldown < 0)
             {
                 setState(State.WANDER);
             }
+        }
+        switch (state)
+        {
+            case State.GOSSIP: anim.SetInteger("Mood", 2); break;
+            case State.PANIC: anim.SetInteger("Mood", 1); break;
+            case State.WANDER: anim.SetInteger("Mood", 0); break;
         }
     }
 
