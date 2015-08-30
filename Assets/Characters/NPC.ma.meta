@@ -416,6 +416,8 @@ ModelImporter:
         weight: 1
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
+      - path: coat
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/ikHandle1
@@ -551,6 +553,8 @@ ModelImporter:
       - path: rig/nurbsCircle15
         weight: 1
       - path: rig/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -654,6 +658,8 @@ ModelImporter:
         weight: 1
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
+      - path: coat
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/ikHandle1
@@ -789,6 +795,8 @@ ModelImporter:
       - path: rig/nurbsCircle15
         weight: 1
       - path: rig/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -892,6 +900,8 @@ ModelImporter:
         weight: 1
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
+      - path: coat
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/ikHandle1
@@ -1027,6 +1037,8 @@ ModelImporter:
       - path: rig/nurbsCircle15
         weight: 1
       - path: rig/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1130,6 +1142,8 @@ ModelImporter:
         weight: 1
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
+      - path: coat
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/ikHandle1
@@ -1265,6 +1279,8 @@ ModelImporter:
       - path: rig/nurbsCircle15
         weight: 1
       - path: rig/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1368,6 +1384,8 @@ ModelImporter:
         weight: 1
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
+      - path: coat
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/ikHandle1
@@ -1503,6 +1521,8 @@ ModelImporter:
       - path: rig/nurbsCircle15
         weight: 1
       - path: rig/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1606,6 +1626,8 @@ ModelImporter:
         weight: 1
       - path: body/right_arm/right_hand/pCube23 1
         weight: 1
+      - path: coat
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/ikHandle1
@@ -1741,6 +1763,8 @@ ModelImporter:
       - path: rig/nurbsCircle15
         weight: 1
       - path: rig/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
