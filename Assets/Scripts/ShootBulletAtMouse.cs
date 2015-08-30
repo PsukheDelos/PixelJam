@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ShootBulletAtMouse : MonoBehaviour {
@@ -16,10 +17,20 @@ public class ShootBulletAtMouse : MonoBehaviour {
     public float bulletLife;
     public WeaponType type;
 
+	//UI 
+	public GameObject weapon_image;
+	public GameObject weapon_text;
+	public Sprite tommy_img;
+	public Sprite pistol_img;
+	public Sprite knife_img;
+
     private bool fired;
     private bool switched;
     private float cooldown;
     private Rect screen = new Rect(0, 0, Screen.width, Screen.height);
+
+	private int tommy_ammo = 40;
+	private int pistol_ammo = 6;
 
     public enum WeaponType
     {
@@ -38,7 +49,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
         cooldown += Time.deltaTime;
         if (Input.GetAxis("Fire1") > 0.01)
         {
-            if (type == WeaponType.TOMMYGUN && cooldown > 0.1f)
+            if (type == WeaponType.TOMMYGUN && cooldown > 0.1f && tommy_ammo > 0)
             {
                 anim.SetTrigger("TommyTrigger");
                 cooldown = 0;
@@ -49,8 +60,10 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
                 GetComponent<ObservedBehaviour>().firedShot();
+				tommy_ammo--;
+				weapon_text.GetComponent<Text>().text = "" + tommy_ammo;
             }
-            if (type == WeaponType.PISTOL && !fired)
+            if (type == WeaponType.PISTOL && !fired && pistol_ammo > 0)
             {
                 anim.SetTrigger("PistolTrigger");
                 fired = true;
@@ -60,6 +73,9 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
                 GameObject.Destroy(mybullet, bulletLife);
                 GetComponent<ObservedBehaviour>().firedShot();
+				pistol_ammo--;
+				weapon_text.GetComponent<Text>().text = "" + pistol_ammo;
+				weapon_image.GetComponent<Image>().sprite = pistol_img;
             }
             if (type == WeaponType.KNIFE && !fired)
             {
@@ -70,6 +86,8 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), myknife.GetComponentInChildren<Collider>());
                 GameObject.Destroy(myknife, 0.2f);
                 GetComponent<ObservedBehaviour>().swungKnife();
+				weapon_text.GetComponent<Text>().text = "";
+				weapon_image.GetComponent<Image>().sprite = knife_img;
             }
         }
         if (Input.GetAxis("Fire1") < 0.01)
@@ -85,13 +103,22 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 {
                     case WeaponType.KNIFE:
                         anim.SetTrigger("KnifeAway");
-                        type = WeaponType.PISTOL; break;
+                        type = WeaponType.PISTOL; 
+						weapon_text.GetComponent<Text>().text = "" + pistol_ammo;
+						weapon_image.GetComponent<Image>().sprite = pistol_img;
+						break;
                     case WeaponType.PISTOL:
                         anim.SetTrigger("PistolAway");
-                        type = WeaponType.TOMMYGUN; break;
+                        type = WeaponType.TOMMYGUN; 
+						weapon_image.GetComponent<Image>().sprite = tommy_img;
+						weapon_text.GetComponent<Text>().text = "" + tommy_ammo;
+						break;
                     case WeaponType.TOMMYGUN:
                         anim.SetTrigger("TommyAway");
-                        type = WeaponType.KNIFE; break;
+                        type = WeaponType.KNIFE; 
+						weapon_text.GetComponent<Text>().text = "";
+						weapon_image.GetComponent<Image>().sprite = knife_img;
+						break;
                 }
             }
         }
