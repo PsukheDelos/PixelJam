@@ -56,10 +56,6 @@ public class DetermineOutcome : MonoBehaviour {
         }
 	}
 
-    void OnGUI () {
-        GUI.Label(screenrect, "\nCurrent max knowledge: " + score * 100 + "%.\nCurrent kills: " + (totalGuests - currentGuests) + ".");
-    }
-
 	public void GameOver(){
 		Time.timeScale = 0;
 		TimeUI.SetActive(false);
