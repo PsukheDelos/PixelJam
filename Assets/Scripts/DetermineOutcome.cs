@@ -25,6 +25,10 @@ public class DetermineOutcome : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
         if (started)
         {
             time -= Time.deltaTime;
@@ -60,7 +64,7 @@ public class DetermineOutcome : MonoBehaviour {
 		Time.timeScale = 0;
 		TimeUI.SetActive(false);
 		GameOverUI.SetActive(true);
-        TextOut.GetComponent<Text>().text = "Witness accuracy: " + (int)(score * 100) + " %\nTotal kill count: " + (totalGuests - currentGuests) + "\nGrade: " + grade() + "\nPress R to try again, Johnny!";
+        TextOut.GetComponent<Text>().text = "Witness accuracy: " + (int)(score * 100) + " %\nTotal kill count: " + (totalGuests - currentGuests) + "\nGrade: " + grade() + "\nPress Esc to quit, Johnny!";
 		Player.GetComponent<LookAtMouse>().enabled = false;
 		Reticle.GetComponent<StickToMouse>().enabled = false;
 	}
