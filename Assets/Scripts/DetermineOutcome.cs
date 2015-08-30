@@ -25,9 +25,13 @@ public class DetermineOutcome : MonoBehaviour {
 	void Update () {
 		time -= Time.deltaTime;
         score = 0;
-        currentGuests = GameObject.FindGameObjectsWithTag("Guest").Length;
+        currentGuests = 0;
 	    foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest")){
-            score = Mathf.Max(score, o.GetComponent<GuestKnowledge>().getKnowledge());
+            if (!o.GetComponent<Death>().isDead())
+            {
+                score = Mathf.Max(score, o.GetComponent<GuestKnowledge>().getKnowledge());
+                currentGuests++;
+            }
         }
 
 		if (time < 0) {
