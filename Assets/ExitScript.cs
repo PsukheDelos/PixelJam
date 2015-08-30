@@ -6,6 +6,8 @@ public class ExitScript : MonoBehaviour {
 	public GameObject theJudge;
 
 	void OnTriggerEnter(Collider other) {
-		theJudge.GetComponent<DetermineOutcome> ().GameOver ();
+		if (other.gameObject.tag == "Player") {
+			theJudge.GetComponent<DetermineOutcome> ().GameOver ();
+		}
 	}
 }
