@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour {
     public GameObject secondWitness;
     public Animator playerArms;
     public Animator playerLegs;
+    public GameObject introUI;
     public float delay;
     private bool started;
 
@@ -26,6 +27,7 @@ public class StartGame : MonoBehaviour {
             playerLegs.SetTrigger("Start");
             firstWitness.GetComponent<GuestMover>().enabled = true;
             secondWitness.GetComponent<GuestMover>().enabled = true;
+            player.GetComponent<ShootBulletAtMouse>().enabled = false;
         }
         if (started)
         {
@@ -37,6 +39,8 @@ public class StartGame : MonoBehaviour {
             player.GetComponent<CharacterControls>().enabled = true;
             player.GetComponent<LookAtMouse>().enabled = true;
             GetComponent<DetermineOutcome>().startGame();
+            player.GetComponent<ShootBulletAtMouse>().enabled = true;
+            introUI.SetActive(false);
         }else
         {
             reticle.transform.position = victim.transform.position;

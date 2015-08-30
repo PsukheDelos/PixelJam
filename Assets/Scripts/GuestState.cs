@@ -85,7 +85,7 @@ public class GuestState : MonoBehaviour
         switch (newState)
         {
             case State.PANIC:
-                GetComponent<NavMeshAgent>().speed = 10;
+                GetComponent<NavMeshAgent>().speed = 5;
                 panicCooldown = panicDuration; break;
             case State.WANDER:
                 GetComponent<NavMeshAgent>().speed = 2; break;
