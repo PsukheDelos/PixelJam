@@ -13,6 +13,7 @@ public class StartGame : MonoBehaviour {
     public GameObject introUI;
     public GameObject environmentAudio;
     public GameObject textBox;
+    public GameObject roomTitle;
     public float controlDelay;
     public float audioQuit;
     public float currentTimer;
@@ -43,19 +44,19 @@ public class StartGame : MonoBehaviour {
         {
             textBox.GetComponent<Text>().text = "Press Left-Click to shoot weapons.";
         }
-        else if (currentTimer < 2)
+        else if (currentTimer < 1.1)
         {
             textBox.GetComponent<Text>().text = "Well, shit.";
         }
-        else if (currentTimer < 4)
+        else if (currentTimer < 2.2)
         {
             textBox.GetComponent<Text>().text = "Press Right-Click to switch weapons.";
         }
-        else if (currentTimer < 6)
+        else if (currentTimer < 3.3)
         {
             textBox.GetComponent<Text>().text = "Press Right-Click to switch weapons.\nWASD lets you move.";
         }
-        else if (currentTimer < 8)
+        else if (currentTimer < 4.4)
         {
             textBox.GetComponent<Text>().text = "Press Right-Click to switch weapons.\nWASD lets you move.\nInformation about you will spread.";
         }
@@ -69,6 +70,7 @@ public class StartGame : MonoBehaviour {
             player.GetComponent<ShootBulletAtMouse>().enabled = true;
             player.GetComponent<ShootBulletAtMouse>().unlock();
             introUI.SetActive(false);
+            roomTitle.SetActive(true);
             environmentAudio.GetComponent<AudioSource>().enabled = true;
         }else
         {
