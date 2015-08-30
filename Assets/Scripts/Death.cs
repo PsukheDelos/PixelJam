@@ -12,6 +12,7 @@ public class Death : MonoBehaviour {
     public void die()
     {
         dead = true;
+        GetComponent<AudioSource>().enabled = true;
         GetComponent<GuestVisionCone>().kill();
         GetComponent<GuestVisionCone>().enabled = false;
         GetComponent<NavMeshAgent>().enabled = false;
