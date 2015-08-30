@@ -11,7 +11,7 @@ public class GuestKnowledge : MonoBehaviour {
 
     void Update()
     {
-        Debug.DrawRay(transform.position, Vector3.up * 10, new Color(1, 1, 1, knowledge));
+        GetComponent<TrailRenderer>().material.color = new Color(0, 0, 0, knowledge);
     }
 
     public float getKnowledge()
