@@ -11,6 +11,7 @@ public class Death : MonoBehaviour {
     public void die()
     {
         GetComponent<GuestVisionCone>().kill();
+        GetComponent<GuestVisionCone>().enabled = false;
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Collider>().enabled = false;
         anim.SetTrigger("Die");
