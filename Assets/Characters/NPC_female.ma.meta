@@ -263,7 +263,12 @@ ModelImporter:
     4300062: necklace
     4300064: dress
     4300066: pCube26
-    7400000: Take 001
+    7400000: Idle
+    7400002: Walk
+    7400004: Panic
+    7400006: Die
+    7400008: Gossip
+    7400010: Fright
     9500000: //RootNode
     13700000: pCube1
     13700002: pCube10
@@ -302,7 +307,7 @@ ModelImporter:
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 0
+    bakeSimulation: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -315,11 +320,1475 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/group2
+        weight: 1
+      - path: body/group2/pCube1
+        weight: 1
+      - path: body/group2/pCube2
+        weight: 1
+      - path: body/group2/pCube3
+        weight: 1
+      - path: body/group2/pCube4
+        weight: 1
+      - path: body/group2/pCube5
+        weight: 1
+      - path: body/group2/pCube6
+        weight: 1
+      - path: body/group2/pCube24
+        weight: 1
+      - path: body/group2/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/pCube7
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: dress
+        weight: 1
+      - path: necklace
+        weight: 1
+      - path: pCube26
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/ikHandle1
+        weight: 1
+      - path: rig/ikHandle2
+        weight: 1
+      - path: rig/ikHandle3
+        weight: 1
+      - path: rig/ikHandle4
+        weight: 1
+      - path: rig/ikHandle5
+        weight: 1
+      - path: rig/ikHandle6
+        weight: 1
+      - path: rig/ikHandle7
+        weight: 1
+      - path: rig/joint1
+        weight: 1
+      - path: rig/joint1/joint2
+        weight: 1
+      - path: rig/joint1/joint2/joint3
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/joint1/joint17
+        weight: 1
+      - path: rig/joint1/joint17/joint18
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/joint1/joint32
+        weight: 1
+      - path: rig/joint1/joint32/joint33
+        weight: 1
+      - path: rig/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/joint1/joint34
+        weight: 1
+      - path: rig/joint1/joint34/joint35
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/nurbsCircle1
+        weight: 1
+      - path: rig/nurbsCircle2
+        weight: 1
+      - path: rig/nurbsCircle3
+        weight: 1
+      - path: rig/nurbsCircle4
+        weight: 1
+      - path: rig/nurbsCircle5
+        weight: 1
+      - path: rig/nurbsCircle6
+        weight: 1
+      - path: rig/nurbsCircle7
+        weight: 1
+      - path: rig/nurbsCircle8
+        weight: 1
+      - path: rig/nurbsCircle9
+        weight: 1
+      - path: rig/nurbsCircle10
+        weight: 1
+      - path: rig/nurbsCircle12
+        weight: 1
+      - path: rig/nurbsCircle13
+        weight: 1
+      - path: rig/nurbsCircle14
+        weight: 1
+      - path: rig/nurbsCircle15
+        weight: 1
+      - path: rig/nurbsCircle16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/group2
+        weight: 1
+      - path: body/group2/pCube1
+        weight: 1
+      - path: body/group2/pCube2
+        weight: 1
+      - path: body/group2/pCube3
+        weight: 1
+      - path: body/group2/pCube4
+        weight: 1
+      - path: body/group2/pCube5
+        weight: 1
+      - path: body/group2/pCube6
+        weight: 1
+      - path: body/group2/pCube24
+        weight: 1
+      - path: body/group2/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/pCube7
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: dress
+        weight: 1
+      - path: necklace
+        weight: 1
+      - path: pCube26
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/ikHandle1
+        weight: 1
+      - path: rig/ikHandle2
+        weight: 1
+      - path: rig/ikHandle3
+        weight: 1
+      - path: rig/ikHandle4
+        weight: 1
+      - path: rig/ikHandle5
+        weight: 1
+      - path: rig/ikHandle6
+        weight: 1
+      - path: rig/ikHandle7
+        weight: 1
+      - path: rig/joint1
+        weight: 1
+      - path: rig/joint1/joint2
+        weight: 1
+      - path: rig/joint1/joint2/joint3
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/joint1/joint17
+        weight: 1
+      - path: rig/joint1/joint17/joint18
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/joint1/joint32
+        weight: 1
+      - path: rig/joint1/joint32/joint33
+        weight: 1
+      - path: rig/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/joint1/joint34
+        weight: 1
+      - path: rig/joint1/joint34/joint35
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/nurbsCircle1
+        weight: 1
+      - path: rig/nurbsCircle2
+        weight: 1
+      - path: rig/nurbsCircle3
+        weight: 1
+      - path: rig/nurbsCircle4
+        weight: 1
+      - path: rig/nurbsCircle5
+        weight: 1
+      - path: rig/nurbsCircle6
+        weight: 1
+      - path: rig/nurbsCircle7
+        weight: 1
+      - path: rig/nurbsCircle8
+        weight: 1
+      - path: rig/nurbsCircle9
+        weight: 1
+      - path: rig/nurbsCircle10
+        weight: 1
+      - path: rig/nurbsCircle12
+        weight: 1
+      - path: rig/nurbsCircle13
+        weight: 1
+      - path: rig/nurbsCircle14
+        weight: 1
+      - path: rig/nurbsCircle15
+        weight: 1
+      - path: rig/nurbsCircle16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Panic
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/group2
+        weight: 1
+      - path: body/group2/pCube1
+        weight: 1
+      - path: body/group2/pCube2
+        weight: 1
+      - path: body/group2/pCube3
+        weight: 1
+      - path: body/group2/pCube4
+        weight: 1
+      - path: body/group2/pCube5
+        weight: 1
+      - path: body/group2/pCube6
+        weight: 1
+      - path: body/group2/pCube24
+        weight: 1
+      - path: body/group2/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/pCube7
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: dress
+        weight: 1
+      - path: necklace
+        weight: 1
+      - path: pCube26
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/ikHandle1
+        weight: 1
+      - path: rig/ikHandle2
+        weight: 1
+      - path: rig/ikHandle3
+        weight: 1
+      - path: rig/ikHandle4
+        weight: 1
+      - path: rig/ikHandle5
+        weight: 1
+      - path: rig/ikHandle6
+        weight: 1
+      - path: rig/ikHandle7
+        weight: 1
+      - path: rig/joint1
+        weight: 1
+      - path: rig/joint1/joint2
+        weight: 1
+      - path: rig/joint1/joint2/joint3
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/joint1/joint17
+        weight: 1
+      - path: rig/joint1/joint17/joint18
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/joint1/joint32
+        weight: 1
+      - path: rig/joint1/joint32/joint33
+        weight: 1
+      - path: rig/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/joint1/joint34
+        weight: 1
+      - path: rig/joint1/joint34/joint35
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/nurbsCircle1
+        weight: 1
+      - path: rig/nurbsCircle2
+        weight: 1
+      - path: rig/nurbsCircle3
+        weight: 1
+      - path: rig/nurbsCircle4
+        weight: 1
+      - path: rig/nurbsCircle5
+        weight: 1
+      - path: rig/nurbsCircle6
+        weight: 1
+      - path: rig/nurbsCircle7
+        weight: 1
+      - path: rig/nurbsCircle8
+        weight: 1
+      - path: rig/nurbsCircle9
+        weight: 1
+      - path: rig/nurbsCircle10
+        weight: 1
+      - path: rig/nurbsCircle12
+        weight: 1
+      - path: rig/nurbsCircle13
+        weight: 1
+      - path: rig/nurbsCircle14
+        weight: 1
+      - path: rig/nurbsCircle15
+        weight: 1
+      - path: rig/nurbsCircle16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Die
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/group2
+        weight: 1
+      - path: body/group2/pCube1
+        weight: 1
+      - path: body/group2/pCube2
+        weight: 1
+      - path: body/group2/pCube3
+        weight: 1
+      - path: body/group2/pCube4
+        weight: 1
+      - path: body/group2/pCube5
+        weight: 1
+      - path: body/group2/pCube6
+        weight: 1
+      - path: body/group2/pCube24
+        weight: 1
+      - path: body/group2/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/pCube7
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: dress
+        weight: 1
+      - path: necklace
+        weight: 1
+      - path: pCube26
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/ikHandle1
+        weight: 1
+      - path: rig/ikHandle2
+        weight: 1
+      - path: rig/ikHandle3
+        weight: 1
+      - path: rig/ikHandle4
+        weight: 1
+      - path: rig/ikHandle5
+        weight: 1
+      - path: rig/ikHandle6
+        weight: 1
+      - path: rig/ikHandle7
+        weight: 1
+      - path: rig/joint1
+        weight: 1
+      - path: rig/joint1/joint2
+        weight: 1
+      - path: rig/joint1/joint2/joint3
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/joint1/joint17
+        weight: 1
+      - path: rig/joint1/joint17/joint18
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/joint1/joint32
+        weight: 1
+      - path: rig/joint1/joint32/joint33
+        weight: 1
+      - path: rig/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/joint1/joint34
+        weight: 1
+      - path: rig/joint1/joint34/joint35
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/nurbsCircle1
+        weight: 1
+      - path: rig/nurbsCircle2
+        weight: 1
+      - path: rig/nurbsCircle3
+        weight: 1
+      - path: rig/nurbsCircle4
+        weight: 1
+      - path: rig/nurbsCircle5
+        weight: 1
+      - path: rig/nurbsCircle6
+        weight: 1
+      - path: rig/nurbsCircle7
+        weight: 1
+      - path: rig/nurbsCircle8
+        weight: 1
+      - path: rig/nurbsCircle9
+        weight: 1
+      - path: rig/nurbsCircle10
+        weight: 1
+      - path: rig/nurbsCircle12
+        weight: 1
+      - path: rig/nurbsCircle13
+        weight: 1
+      - path: rig/nurbsCircle14
+        weight: 1
+      - path: rig/nurbsCircle15
+        weight: 1
+      - path: rig/nurbsCircle16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Gossip
+      takeName: Take 001
+      firstFrame: 170
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/group2
+        weight: 1
+      - path: body/group2/pCube1
+        weight: 1
+      - path: body/group2/pCube2
+        weight: 1
+      - path: body/group2/pCube3
+        weight: 1
+      - path: body/group2/pCube4
+        weight: 1
+      - path: body/group2/pCube5
+        weight: 1
+      - path: body/group2/pCube6
+        weight: 1
+      - path: body/group2/pCube24
+        weight: 1
+      - path: body/group2/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/pCube7
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: dress
+        weight: 1
+      - path: necklace
+        weight: 1
+      - path: pCube26
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/ikHandle1
+        weight: 1
+      - path: rig/ikHandle2
+        weight: 1
+      - path: rig/ikHandle3
+        weight: 1
+      - path: rig/ikHandle4
+        weight: 1
+      - path: rig/ikHandle5
+        weight: 1
+      - path: rig/ikHandle6
+        weight: 1
+      - path: rig/ikHandle7
+        weight: 1
+      - path: rig/joint1
+        weight: 1
+      - path: rig/joint1/joint2
+        weight: 1
+      - path: rig/joint1/joint2/joint3
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/joint1/joint17
+        weight: 1
+      - path: rig/joint1/joint17/joint18
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/joint1/joint32
+        weight: 1
+      - path: rig/joint1/joint32/joint33
+        weight: 1
+      - path: rig/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/joint1/joint34
+        weight: 1
+      - path: rig/joint1/joint34/joint35
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/nurbsCircle1
+        weight: 1
+      - path: rig/nurbsCircle2
+        weight: 1
+      - path: rig/nurbsCircle3
+        weight: 1
+      - path: rig/nurbsCircle4
+        weight: 1
+      - path: rig/nurbsCircle5
+        weight: 1
+      - path: rig/nurbsCircle6
+        weight: 1
+      - path: rig/nurbsCircle7
+        weight: 1
+      - path: rig/nurbsCircle8
+        weight: 1
+      - path: rig/nurbsCircle9
+        weight: 1
+      - path: rig/nurbsCircle10
+        weight: 1
+      - path: rig/nurbsCircle12
+        weight: 1
+      - path: rig/nurbsCircle13
+        weight: 1
+      - path: rig/nurbsCircle14
+        weight: 1
+      - path: rig/nurbsCircle15
+        weight: 1
+      - path: rig/nurbsCircle16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fright
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/group2
+        weight: 1
+      - path: body/group2/pCube1
+        weight: 1
+      - path: body/group2/pCube2
+        weight: 1
+      - path: body/group2/pCube3
+        weight: 1
+      - path: body/group2/pCube4
+        weight: 1
+      - path: body/group2/pCube5
+        weight: 1
+      - path: body/group2/pCube6
+        weight: 1
+      - path: body/group2/pCube24
+        weight: 1
+      - path: body/group2/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/pCube7
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: dress
+        weight: 1
+      - path: necklace
+        weight: 1
+      - path: pCube26
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/ikHandle1
+        weight: 1
+      - path: rig/ikHandle2
+        weight: 1
+      - path: rig/ikHandle3
+        weight: 1
+      - path: rig/ikHandle4
+        weight: 1
+      - path: rig/ikHandle5
+        weight: 1
+      - path: rig/ikHandle6
+        weight: 1
+      - path: rig/ikHandle7
+        weight: 1
+      - path: rig/joint1
+        weight: 1
+      - path: rig/joint1/joint2
+        weight: 1
+      - path: rig/joint1/joint2/joint3
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/joint1/joint17
+        weight: 1
+      - path: rig/joint1/joint17/joint18
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/joint1/joint32
+        weight: 1
+      - path: rig/joint1/joint32/joint33
+        weight: 1
+      - path: rig/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/joint1/joint34
+        weight: 1
+      - path: rig/joint1/joint34/joint35
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43
+        weight: 1
+      - path: rig/joint1/joint34/joint35/joint36/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: rig/nurbsCircle1
+        weight: 1
+      - path: rig/nurbsCircle2
+        weight: 1
+      - path: rig/nurbsCircle3
+        weight: 1
+      - path: rig/nurbsCircle4
+        weight: 1
+      - path: rig/nurbsCircle5
+        weight: 1
+      - path: rig/nurbsCircle6
+        weight: 1
+      - path: rig/nurbsCircle7
+        weight: 1
+      - path: rig/nurbsCircle8
+        weight: 1
+      - path: rig/nurbsCircle9
+        weight: 1
+      - path: rig/nurbsCircle10
+        weight: 1
+      - path: rig/nurbsCircle12
+        weight: 1
+      - path: rig/nurbsCircle13
+        weight: 1
+      - path: rig/nurbsCircle14
+        weight: 1
+      - path: rig/nurbsCircle15
+        weight: 1
+      - path: rig/nurbsCircle16
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .0500000007
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
