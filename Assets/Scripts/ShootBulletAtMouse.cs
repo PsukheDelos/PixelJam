@@ -9,11 +9,14 @@ public class ShootBulletAtMouse : MonoBehaviour {
     public GameObject tommybullet;
     public GameObject tommypoint;
     public float tommyshake;
+    public AudioClip tommySwap;
     public GameObject pistolbullet;
     public GameObject pistolpoint;
     public float pistolshake;
+    public AudioClip pistolSwap;
     public GameObject knifeArea;
     public float knifeshake;
+    public AudioClip knifeSwap;
     public float bulletLife;
     public WeaponType type;
 
@@ -28,8 +31,8 @@ public class ShootBulletAtMouse : MonoBehaviour {
     private bool switched;
     private float cooldown;
 
-	private int tommy_ammo = 40;
-	private int pistol_ammo = 6;
+	private int tommy_ammo = 60;
+	private int pistol_ammo = 12;
 
     public enum WeaponType
     {
@@ -102,18 +105,27 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 {
                     case WeaponType.KNIFE:
                         anim.SetTrigger("KnifeAway");
+                        GetComponent<AudioSource>().Stop();
+                        GetComponent<AudioSource>().clip = pistolSwap;
+                        GetComponent<AudioSource>().Play();
                         type = WeaponType.PISTOL; 
 						weapon_text.GetComponent<Text>().text = "" + pistol_ammo;
 						weapon_image.GetComponent<Image>().sprite = pistol_img;
 						break;
                     case WeaponType.PISTOL:
                         anim.SetTrigger("PistolAway");
+                        GetComponent<AudioSource>().Stop();
+                        GetComponent<AudioSource>().clip = tommySwap;
+                        GetComponent<AudioSource>().Play();
                         type = WeaponType.TOMMYGUN; 
 						weapon_image.GetComponent<Image>().sprite = tommy_img;
 						weapon_text.GetComponent<Text>().text = "" + tommy_ammo;
 						break;
                     case WeaponType.TOMMYGUN:
                         anim.SetTrigger("TommyAway");
+                        GetComponent<AudioSource>().Stop();
+                        GetComponent<AudioSource>().clip = knifeSwap;
+                        GetComponent<AudioSource>().Play();
                         type = WeaponType.KNIFE; 
 						weapon_text.GetComponent<Text>().text = "";
 						weapon_image.GetComponent<Image>().sprite = knife_img;
