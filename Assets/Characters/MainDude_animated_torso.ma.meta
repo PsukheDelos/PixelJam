@@ -94,6 +94,10 @@ ModelImporter:
     100172: pistol3
     100174: knife
     100176: polySurface2
+    100178: coat
+    100180: hat
+    100182: hat1
+    100184: tie
     400000: body
     400002: head
     400004: ikHandle1
@@ -183,18 +187,30 @@ ModelImporter:
     400172: pistol3
     400174: knife
     400176: polySurface2
+    400178: coat
+    400180: hat
+    400182: hat1
+    400184: tie
     2300000: pistol
     2300002: pistol1
     2300004: pistol2
     2300006: pistol3
     2300008: knife
     2300010: polySurface2
+    2300012: coat
+    2300014: hat
+    2300016: hat1
+    2300018: tie
     3300000: pistol
     3300002: pistol1
     3300004: pistol2
     3300006: pistol3
     3300008: knife
     3300010: polySurface2
+    3300012: coat
+    3300014: hat
+    3300016: hat1
+    3300018: tie
     4300000: pCube25
     4300002: pCube24
     4300004: torso
@@ -226,6 +242,10 @@ ModelImporter:
     4300056: pistol3
     4300058: knife
     4300060: polySurface2
+    4300062: hat
+    4300064: hat1
+    4300066: tie
+    4300068: coat
     7400000: Cutscene
     7400002: PistolIdle
     7400004: TommyDraw
@@ -370,6 +390,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -483,6 +509,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -574,6 +602,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -687,6 +721,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -778,6 +814,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -891,6 +933,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -982,6 +1026,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -1095,6 +1145,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1186,6 +1238,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -1299,6 +1357,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1390,6 +1450,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -1503,6 +1569,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1594,6 +1662,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -1707,6 +1781,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1798,6 +1874,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -1911,6 +1993,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -2002,6 +2086,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -2115,6 +2205,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -2206,6 +2298,12 @@ ModelImporter:
         weight: 1
       - path: body/torso
         weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
       - path: knife
         weight: 1
       - path: knife/polySurface2
@@ -2319,6 +2417,8 @@ ModelImporter:
       - path: rig/top_controls1/nurbsCircle15
         weight: 1
       - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
