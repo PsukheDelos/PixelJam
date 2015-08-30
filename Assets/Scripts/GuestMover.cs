@@ -8,8 +8,6 @@ public class GuestMover : MonoBehaviour
     public float targetThreshold;
     public GameObject room;
 
-    private Animator anim;
-
     private Vector3 direction;
     private NavMeshAgent nma;
     private bool pathing;
@@ -21,7 +19,6 @@ public class GuestMover : MonoBehaviour
     void Start()
     {
 		nma = GetComponent<NavMeshAgent> ();
-        anim = GetComponentInChildren<Animator> ();
         targetNode = room.GetComponent<RoomScript>().getNearestNode(transform);
 		nma.destination = targetNode.transform.position;
 		waitTime = targetNode.GetComponent<NodeScript>().getDuration();
@@ -41,11 +38,6 @@ public class GuestMover : MonoBehaviour
 			}
 		}
 
-        if (GetComponent<GuestState>().getState() == GuestState.State.PANIC)
-        {
-            waitTime = 0;
-        }
-
         if ((Vector3.Magnitude(transform.position - nma.destination) < targetThreshold
             && GetComponent<GuestState>().getState() != GuestState.State.GOSSIP))
         {
@@ -64,7 +56,6 @@ public class GuestMover : MonoBehaviour
 			}
         }
         Debug.DrawLine(transform.position, nma.destination, Color.green);
-        anim.SetFloat("Movement", Vector3.Magnitude(nma.velocity));
        
     }
 

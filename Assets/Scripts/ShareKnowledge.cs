@@ -7,7 +7,7 @@ public class ShareKnowledge : MonoBehaviour {
     {
         if (c.gameObject.GetComponent<GuestKnowledge>() != null)
         {
-            if (c.gameObject.GetComponent<GuestKnowledge>().canAddKnowledge(GetComponent<GuestKnowledge>().getKnowledge()) && GetComponent<GuestState>().getState() != GuestState.State.PANIC)
+            if (c.gameObject.GetComponent<GuestKnowledge>().canAddKnowledge(GetComponent<GuestKnowledge>().getKnowledge()))
             {
                 c.gameObject.GetComponent<GuestKnowledge>().addKnowledge(GetComponent<GuestKnowledge>().getKnowledge());
                 GetComponent<GuestState>().setState(GuestState.State.GOSSIP);
