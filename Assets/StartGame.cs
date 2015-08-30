@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class StartGame : MonoBehaviour {
@@ -10,7 +11,11 @@ public class StartGame : MonoBehaviour {
     public Animator playerArms;
     public Animator playerLegs;
     public GameObject introUI;
-    public float delay;
+    public GameObject environmentAudio;
+    public GameObject textBox;
+    public float controlDelay;
+    public float audioQuit;
+    public float currentTimer;
     private bool started;
 
     void Start()
@@ -22,6 +27,7 @@ public class StartGame : MonoBehaviour {
     {
         if (Input.GetAxisRaw("Fire1") > 0.1 && !started)
         {
+            GetComponent<AudioSource>().Play();
             started = true;
             playerArms.SetTrigger("Start");
             playerLegs.SetTrigger("Start");
@@ -31,9 +37,30 @@ public class StartGame : MonoBehaviour {
         }
         if (started)
         {
-            delay-= Time.deltaTime;
+            currentTimer += Time.deltaTime;
         }
-        if (delay < 0)
+        if (currentTimer == 0)
+        {
+            textBox.GetComponent<Text>().text = "Press Left-Click to shoot weapons.";
+        }
+        else if (currentTimer < 2)
+        {
+            textBox.GetComponent<Text>().text = "Well, shit.";
+        }
+        else if (currentTimer < 4)
+        {
+            textBox.GetComponent<Text>().text = "Press Right-Click to switch weapons.";
+        }
+        else if (currentTimer < 6)
+        {
+            textBox.GetComponent<Text>().text = "Press Right-Click to switch weapons.\nWASD lets you move.";
+        }
+        else if (currentTimer < 8)
+        {
+            textBox.GetComponent<Text>().text = "Press Right-Click to switch weapons.\nWASD lets you move.\nInformation about you will spread.";
+        }
+
+        if (currentTimer > controlDelay)
         {
             reticle.GetComponent<StickToMouse>().enabled = true;
             player.GetComponent<CharacterControls>().enabled = true;
@@ -42,9 +69,14 @@ public class StartGame : MonoBehaviour {
             player.GetComponent<ShootBulletAtMouse>().enabled = true;
             player.GetComponent<ShootBulletAtMouse>().unlock();
             introUI.SetActive(false);
+            environmentAudio.GetComponent<AudioSource>().enabled = true;
         }else
         {
             reticle.transform.position = victim.transform.position;
+        }
+        if (currentTimer > audioQuit)
+        {
+            GetComponent<AudioSource>().Stop();
         }
     }
 }
