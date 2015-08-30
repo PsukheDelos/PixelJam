@@ -28,6 +28,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
 	public Sprite knife_img;
 
     private bool fired;
+    private bool locked;
     private bool switched;
     private float cooldown;
 
@@ -43,7 +44,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    
+        locked = true;
 	}
 	
 	// Update is called once per frame
@@ -98,7 +99,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
         }
         if (Input.GetAxis("Fire2") > 0.01)
         {
-            if (!switched)
+            if (!switched && !locked)
             {
                 switched = true;
                 switch (type)
@@ -138,5 +139,9 @@ public class ShootBulletAtMouse : MonoBehaviour {
             switched = false;
         }
 	}
-	
+
+    public void unlock()
+    {
+        locked = false;
+    }
 }

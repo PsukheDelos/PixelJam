@@ -40,6 +40,7 @@ public class StartGame : MonoBehaviour {
             player.GetComponent<LookAtMouse>().enabled = true;
             GetComponent<DetermineOutcome>().startGame();
             player.GetComponent<ShootBulletAtMouse>().enabled = true;
+            player.GetComponent<ShootBulletAtMouse>().unlock();
             introUI.SetActive(false);
         }else
         {
