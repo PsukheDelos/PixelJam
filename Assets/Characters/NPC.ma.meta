@@ -111,6 +111,8 @@ ModelImporter:
     100206: rig
     100208: right_arm
     100210: right_hand
+    100212: coat
+    100214: tie
     400000: body
     400002: group2
     400004: ikHandle1
@@ -217,6 +219,12 @@ ModelImporter:
     400206: rig
     400208: right_arm
     400210: right_hand
+    400212: coat
+    400214: tie
+    2300000: coat
+    2300002: tie
+    3300000: coat
+    3300002: tie
     4300000: pCube9
     4300002: pCube10
     4300004: pCube14
@@ -248,6 +256,8 @@ ModelImporter:
     4300056: pCube22
     4300058: pCube23
     4300060: pCube7
+    4300062: tie
+    4300064: coat
     7400000: Idle
     7400002: Walk
     7400004: Panic

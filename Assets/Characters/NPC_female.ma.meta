@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: e4adbf4e524cf46d2b4d89c85a499970
+timeCreated: 1440903463
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: body
+    100002: dress
+    100004: group2
+    100006: ikHandle1
+    100008: ikHandle2
+    100010: ikHandle3
+    100012: ikHandle4
+    100014: ikHandle5
+    100016: ikHandle6
+    100018: ikHandle7
+    100020: joint1
+    100022: joint10
+    100024: joint11
+    100026: joint12
+    100028: joint13
+    100030: joint14
+    100032: joint15
+    100034: joint16
+    100036: joint17
+    100038: joint18
+    100040: joint19
+    100042: joint2
+    100044: joint20
+    100046: joint21
+    100048: joint22
+    100050: joint23
+    100052: joint24
+    100054: joint25
+    100056: joint26
+    100058: joint27
+    100060: joint28
+    100062: joint29
+    100064: joint3
+    100066: joint30
+    100068: joint31
+    100070: joint32
+    100072: joint33
+    100074: joint34
+    100076: joint35
+    100078: joint36
+    100080: joint37
+    100082: joint38
+    100084: joint39
+    100086: joint4
+    100088: joint40
+    100090: joint41
+    100092: joint42
+    100094: joint43
+    100096: joint44
+    100098: joint45
+    100100: joint5
+    100102: joint6
+    100104: joint7
+    100106: joint8
+    100108: joint9
+    100110: Left_arm
+    100112: left_hand
+    100114: necklace
+    100116: //RootNode
+    100118: nurbsCircle1
+    100120: nurbsCircle10
+    100122: nurbsCircle12
+    100124: nurbsCircle13
+    100126: nurbsCircle14
+    100128: nurbsCircle15
+    100130: nurbsCircle16
+    100132: nurbsCircle2
+    100134: nurbsCircle3
+    100136: nurbsCircle4
+    100138: nurbsCircle5
+    100140: nurbsCircle6
+    100142: nurbsCircle7
+    100144: nurbsCircle8
+    100146: nurbsCircle9
+    100148: pCube1
+    100150: pCube10
+    100152: pCube10 1
+    100154: pCube14
+    100156: pCube14 1
+    100158: pCube15
+    100160: pCube15 1
+    100162: pCube16
+    100164: pCube16 1
+    100166: pCube18
+    100168: pCube18 1
+    100170: pCube19
+    100172: pCube19 1
+    100174: pCube2
+    100176: pCube20
+    100178: pCube20 1
+    100180: pCube21
+    100182: pCube21 1
+    100184: pCube22
+    100186: pCube22 1
+    100188: pCube23
+    100190: pCube23 1
+    100192: pCube24
+    100194: pCube25
+    100196: pCube26
+    100198: pCube3
+    100200: pCube4
+    100202: pCube5
+    100204: pCube6
+    100206: pCube7
+    100208: pCube9
+    100210: pCube9 1
+    100212: rig
+    100214: right_arm
+    100216: right_hand
+    400000: body
+    400002: dress
+    400004: group2
+    400006: ikHandle1
+    400008: ikHandle2
+    400010: ikHandle3
+    400012: ikHandle4
+    400014: ikHandle5
+    400016: ikHandle6
+    400018: ikHandle7
+    400020: joint1
+    400022: joint10
+    400024: joint11
+    400026: joint12
+    400028: joint13
+    400030: joint14
+    400032: joint15
+    400034: joint16
+    400036: joint17
+    400038: joint18
+    400040: joint19
+    400042: joint2
+    400044: joint20
+    400046: joint21
+    400048: joint22
+    400050: joint23
+    400052: joint24
+    400054: joint25
+    400056: joint26
+    400058: joint27
+    400060: joint28
+    400062: joint29
+    400064: joint3
+    400066: joint30
+    400068: joint31
+    400070: joint32
+    400072: joint33
+    400074: joint34
+    400076: joint35
+    400078: joint36
+    400080: joint37
+    400082: joint38
+    400084: joint39
+    400086: joint4
+    400088: joint40
+    400090: joint41
+    400092: joint42
+    400094: joint43
+    400096: joint44
+    400098: joint45
+    400100: joint5
+    400102: joint6
+    400104: joint7
+    400106: joint8
+    400108: joint9
+    400110: Left_arm
+    400112: left_hand
+    400114: necklace
+    400116: //RootNode
+    400118: nurbsCircle1
+    400120: nurbsCircle10
+    400122: nurbsCircle12
+    400124: nurbsCircle13
+    400126: nurbsCircle14
+    400128: nurbsCircle15
+    400130: nurbsCircle16
+    400132: nurbsCircle2
+    400134: nurbsCircle3
+    400136: nurbsCircle4
+    400138: nurbsCircle5
+    400140: nurbsCircle6
+    400142: nurbsCircle7
+    400144: nurbsCircle8
+    400146: nurbsCircle9
+    400148: pCube1
+    400150: pCube10
+    400152: pCube10 1
+    400154: pCube14
+    400156: pCube14 1
+    400158: pCube15
+    400160: pCube15 1
+    400162: pCube16
+    400164: pCube16 1
+    400166: pCube18
+    400168: pCube18 1
+    400170: pCube19
+    400172: pCube19 1
+    400174: pCube2
+    400176: pCube20
+    400178: pCube20 1
+    400180: pCube21
+    400182: pCube21 1
+    400184: pCube22
+    400186: pCube22 1
+    400188: pCube23
+    400190: pCube23 1
+    400192: pCube24
+    400194: pCube25
+    400196: pCube26
+    400198: pCube3
+    400200: pCube4
+    400202: pCube5
+    400204: pCube6
+    400206: pCube7
+    400208: pCube9
+    400210: pCube9 1
+    400212: rig
+    400214: right_arm
+    400216: right_hand
+    2300000: dress
+    2300002: necklace
+    2300004: pCube26
+    3300000: dress
+    3300002: necklace
+    3300004: pCube26
+    4300000: pCube9
+    4300002: pCube10
+    4300004: pCube14
+    4300006: pCube15
+    4300008: pCube16
+    4300010: pCube18
+    4300012: pCube19
+    4300014: pCube20
+    4300016: pCube21
+    4300018: pCube22
+    4300020: pCube23
+    4300022: pCube1
+    4300024: pCube2
+    4300026: pCube3
+    4300028: pCube4
+    4300030: pCube5
+    4300032: pCube6
+    4300034: pCube24
+    4300036: pCube25
+    4300038: pCube9
+    4300040: pCube10
+    4300042: pCube14
+    4300044: pCube15
+    4300046: pCube16
+    4300048: pCube18
+    4300050: pCube19
+    4300052: pCube20
+    4300054: pCube21
+    4300056: pCube22
+    4300058: pCube23
+    4300060: pCube7
+    4300062: necklace
+    4300064: dress
+    4300066: pCube26
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCube1
+    13700002: pCube10
+    13700004: pCube10 1
+    13700006: pCube14
+    13700008: pCube14 1
+    13700010: pCube15
+    13700012: pCube15 1
+    13700014: pCube16
+    13700016: pCube16 1
+    13700018: pCube18
+    13700020: pCube18 1
+    13700022: pCube19
+    13700024: pCube19 1
+    13700026: pCube2
+    13700028: pCube20
+    13700030: pCube20 1
+    13700032: pCube21
+    13700034: pCube21 1
+    13700036: pCube22
+    13700038: pCube22 1
+    13700040: pCube23
+    13700042: pCube23 1
+    13700044: pCube24
+    13700046: pCube25
+    13700048: pCube3
+    13700050: pCube4
+    13700052: pCube5
+    13700054: pCube6
+    13700056: pCube7
+    13700058: pCube9
+    13700060: pCube9 1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
