@@ -8,6 +8,7 @@ public class DetermineOutcome : MonoBehaviour {
     private int totalGuests;
     private int currentGuests;
 	private float time;
+    private bool started;
 
 	public GameObject TimeUI;
 	public GameObject GameOverUI;
@@ -19,29 +20,36 @@ public class DetermineOutcome : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         totalGuests = GameObject.FindGameObjectsWithTag("Guest").Length;
-		time = 30f; 
+		time = 300f; 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		time -= Time.deltaTime;
-        score = 0;
-        currentGuests = 0;
-	    foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest")){
-            if (!o.GetComponent<Death>().isDead())
+        if (started)
+        {
+            time -= Time.deltaTime;
+            score = 0;
+            currentGuests = 0;
+            foreach (GameObject o in GameObject.FindGameObjectsWithTag("Guest"))
             {
-                score = Mathf.Max(score, o.GetComponent<GuestKnowledge>().getKnowledge());
-                currentGuests++;
+                if (!o.GetComponent<Death>().isDead())
+                {
+                    score = Mathf.Max(score, o.GetComponent<GuestKnowledge>().getKnowledge());
+                    currentGuests++;
+                }
+            }
+
+            if (time < 0)
+            {
+                GameOver();
+            }
+            else
+            {
+                int minutes = Mathf.FloorToInt(time / 60F);
+                int seconds = Mathf.FloorToInt(time - minutes * 60);
+                TimeUI.GetComponent<Text>().text = string.Format("{0:0}:{1:00}", minutes, seconds);
             }
         }
-
-		if (time < 0) {
-			GameOver();
-		}else{
-			int minutes = Mathf.FloorToInt(time / 60F);
-			int seconds = Mathf.FloorToInt(time - minutes * 60);
-			TimeUI.GetComponent<Text> ().text = string.Format("{0:0}:{1:00}", minutes, seconds);
-		}
 	}
 
     void OnGUI () {
@@ -106,5 +114,10 @@ public class DetermineOutcome : MonoBehaviour {
                 return "Message Sender\nNo-one's gonna touch you, Johnny.\nAnd I ain't gonna defend you.";
             }
         }
+    }
+
+    public void startGame()
+    {
+        started = true;
     }
 }
