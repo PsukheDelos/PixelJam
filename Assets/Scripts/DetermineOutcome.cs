@@ -20,7 +20,7 @@ public class DetermineOutcome : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         totalGuests = GameObject.FindGameObjectsWithTag("Guest").Length;
-		time = 300f; 
+		time = 180f; 
 	}
 	
 	// Update is called once per frame
