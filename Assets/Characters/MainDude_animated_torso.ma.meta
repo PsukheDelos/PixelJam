@@ -256,6 +256,7 @@ ModelImporter:
     7400014: PistolShoot
     7400016: KnifeSwipe
     7400018: TommyShoot
+    7400020: Start
     9500000: //RootNode
     13700000: pCube10
     13700002: pCube10 1
@@ -2221,6 +2222,218 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/head
+        weight: 1
+      - path: body/head/pCube24
+        weight: 1
+      - path: body/head/pCube25
+        weight: 1
+      - path: body/Left_arm
+        weight: 1
+      - path: body/Left_arm/left_hand
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube14
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube15
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube16
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube18
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube19
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube20
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube21
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube22
+        weight: 1
+      - path: body/Left_arm/left_hand/pCube23
+        weight: 1
+      - path: body/Left_arm/pCube9
+        weight: 1
+      - path: body/Left_arm/pCube10
+        weight: 1
+      - path: body/right_arm
+        weight: 1
+      - path: body/right_arm/pCube9 1
+        weight: 1
+      - path: body/right_arm/pCube10 1
+        weight: 1
+      - path: body/right_arm/right_hand
+        weight: 1
+      - path: body/right_arm/right_hand/pCube14 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube15 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube16 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube18 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube19 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube20 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube21 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube22 1
+        weight: 1
+      - path: body/right_arm/right_hand/pCube23 1
+        weight: 1
+      - path: body/torso
+        weight: 1
+      - path: coat
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/hat1
+        weight: 1
+      - path: knife
+        weight: 1
+      - path: knife/polySurface2
+        weight: 1
+      - path: pistol
+        weight: 1
+      - path: pistol1
+        weight: 1
+      - path: pistol1/pistol2
+        weight: 1
+      - path: pistol1/pistol3
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/top_bones
+        weight: 1
+      - path: rig/top_bones/ikHandle1
+        weight: 1
+      - path: rig/top_bones/ikHandle2
+        weight: 1
+      - path: rig/top_bones/ikHandle5
+        weight: 1
+      - path: rig/top_bones/joint1
+        weight: 1
+      - path: rig/top_bones/joint1/joint2
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint8
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint8/joint9
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint8/joint9/joint10
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint11
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint11/joint12
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint11/joint12/joint13
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint14
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint14/joint15
+        weight: 1
+      - path: rig/top_bones/joint1/joint2/joint3/joint4/joint14/joint15/joint16
+        weight: 1
+      - path: rig/top_bones/joint1/joint17
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint23
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint23/joint24
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint23/joint24/joint25
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint26
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint26/joint27
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint26/joint27/joint28
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint29
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint29/joint30
+        weight: 1
+      - path: rig/top_bones/joint1/joint17/joint18/joint19/joint29/joint30/joint31
+        weight: 1
+      - path: rig/top_bones/joint1/joint32
+        weight: 1
+      - path: rig/top_bones/joint1/joint32/joint33
+        weight: 1
+      - path: rig/top_bones/joint1/joint32/joint33/joint45
+        weight: 1
+      - path: rig/top_bones/joint1/joint34
+        weight: 1
+      - path: rig/top_bones/joint1/joint34/joint46
+        weight: 1
+      - path: rig/top_controls1
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle1
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle2
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle3
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle10
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle12
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle13
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle14
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle15
+        weight: 1
+      - path: rig/top_controls1/nurbsCircle16
+        weight: 1
+      - path: tie
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Start
+      takeName: Take 001
+      firstFrame: 401
+      lastFrame: 402
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

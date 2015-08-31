@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CamShake : MonoBehaviour {
-    public static float shake;
+    public float shake;
     public float reduction;
 
     private Vector3 prevShake;
@@ -21,7 +21,7 @@ public class CamShake : MonoBehaviour {
         transform.position += prevShake;
 	}
 
-    public static void addShake(float amount)
+    public void addShake(float amount)
     {
         shake += amount;
     }

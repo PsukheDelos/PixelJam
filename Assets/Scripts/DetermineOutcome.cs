@@ -60,7 +60,7 @@ public class DetermineOutcome : MonoBehaviour {
 		Time.timeScale = 0;
 		TimeUI.SetActive(false);
 		GameOverUI.SetActive(true);
-        TextOut.GetComponent<Text>().text = "Witness accuracy: " + (int)(score * 100) + " %\nTotal kill count: " + (totalGuests - currentGuests) + "\nGrade: " + grade() + "\nPress Esc to quit, Johnny!";
+        TextOut.GetComponent<Text>().text = "Witness Description: " + (int)(score * 100) + " %\nTotal kill count: " + (totalGuests - currentGuests) + "\nGrade: " + grade() + "\n\nPress R to try again.\nPress Esc to quit";
 		Player.GetComponent<LookAtMouse>().enabled = false;
 		Reticle.GetComponent<StickToMouse>().enabled = false;
 	}

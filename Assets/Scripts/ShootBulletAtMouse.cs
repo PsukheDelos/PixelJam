@@ -20,6 +20,8 @@ public class ShootBulletAtMouse : MonoBehaviour {
     public float bulletLife;
     public WeaponType type;
 
+	public CamShake shaker;
+
 	//UI 
 	public GameObject weapon_image;
 	public GameObject weapon_text;
@@ -48,16 +50,16 @@ public class ShootBulletAtMouse : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	public void FixedUpdate () {
         cooldown += Time.deltaTime;
-        if (Input.GetAxis("Fire1") > 0.01)
+		if (Input.GetAxisRaw("Fire1") > 0.01)
         {
             if (type == WeaponType.TOMMYGUN && cooldown > 0.1f && tommy_ammo > 0)
             {
                 anim.SetTrigger("TommyTrigger");
                 cooldown = 0;
                 fired = true;
-                CamShake.addShake(tommyshake);
+				shaker.addShake(tommyshake);
                 GameObject mybullet = GameObject.Instantiate(tommybullet, tommypoint.transform.position, transform.rotation) as GameObject;
                 mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 30, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
@@ -70,7 +72,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
             {
                 anim.SetTrigger("PistolTrigger");
                 fired = true;
-                CamShake.addShake(pistolshake);
+				shaker.addShake(pistolshake);
                 GameObject mybullet = GameObject.Instantiate(pistolbullet, pistolpoint.transform.position, transform.rotation) as GameObject;
                 mybullet.GetComponent<Rigidbody>().AddRelativeForce(0, 0, 40, ForceMode.Impulse);
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), mybullet.GetComponentInChildren<Collider>());
@@ -84,7 +86,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
             {
                 anim.SetTrigger("KnifeTrigger");
                 fired = true;
-                CamShake.addShake(knifeshake);
+				shaker.addShake(knifeshake);
                 GameObject myknife = GameObject.Instantiate(knifeArea, transform.position + Vector3.up + transform.forward, transform.rotation) as GameObject;
                 Physics.IgnoreCollision(gameObject.GetComponentInChildren<Collider>(), myknife.GetComponentInChildren<Collider>());
                 GameObject.Destroy(myknife, 0.2f);
@@ -93,11 +95,11 @@ public class ShootBulletAtMouse : MonoBehaviour {
 				weapon_image.GetComponent<Image>().sprite = knife_img;
             }
         }
-        if (Input.GetAxis("Fire1") < 0.01)
+		if (Input.GetAxisRaw("Fire1") < 0.01)
         {
             fired = false;
         }
-        if (Input.GetAxis("Fire2") > 0.01)
+		if (Input.GetAxisRaw("Fire2") > 0.01)
         {
             if (!switched && !locked)
             {
@@ -134,7 +136,7 @@ public class ShootBulletAtMouse : MonoBehaviour {
                 }
             }
         }
-        if (Input.GetAxis("Fire2") < 0.01)
+		if (Input.GetAxisRaw("Fire2") < 0.01)
         {
             switched = false;
         }
