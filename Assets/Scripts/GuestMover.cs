@@ -21,6 +21,8 @@ public class GuestMover : MonoBehaviour
     void Start()
     {
 		nma = GetComponent<NavMeshAgent> ();
+		nma.avoidancePriority = Random.Range (0, 100);
+
         anim = GetComponentInChildren<Animator> ();
         targetNode = room.GetComponent<RoomScript>().getNearestNode(transform);
 		nma.destination = targetNode.transform.position;
